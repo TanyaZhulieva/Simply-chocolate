@@ -20,14 +20,14 @@ img {
 }
 
 .link {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  color: currentColor;
+  text-decoration: none;
 }
 
 .list {
-  color: currentColor;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .section {
