@@ -1,0 +1,141 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 50px 32px;
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 50px;
+        max-width: 1200px;
+    }
+}
+
+
+.advantages-section {
+    background-color: #1E1823;
+    color: #FFFFFF;
+}
+
+
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 20px;
+}
+
+
+
+
+.advantages-item {
+    --item: 1;
+    flex-basis: calc((100% - 28px * (var(--item) - 1)) / var(--item));
+
+}
+
+@media only screen and (min-width: 768px) {
+    .advantages-item {
+        --item: 2;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .advantages-item {
+         --item: 3;
+         flex-basis: calc((100% - 28px * (var(--item) - 1)) / var(--item));
+    }
+}
+
+
+.advantages-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+}
+
+.advantages-icon {
+    fill: #FD9222;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    max-width: 308px;
+ }
+
+ @media only screen and (min-width: 1200px) {
+    .text-wrapper::after{
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 124px;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transform: rotate(90deg);
+        transform-origin: right center;
+          
+      }
+ }
+
+
+
+
+.advantages-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: start;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1158px) {
+    .advantages-title {
+        letter-spacing: 0.01em;
+    }
+}
+
+
+.advantages-descr {
+    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+   }
+
+
+
