@@ -1,0 +1,146 @@
+/* js close btn */
+.buy-modal-form {
+    display: none;
+}
+
+.buy-active {
+    display: block;
+}
+
+.buy-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+
+    width: 120px;
+    height: 41px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    background: #FD9222;
+    border-radius: 100px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+}
+
+.buy-close-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    top: 14px;
+    left: 88%;
+
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-style: none;
+
+    position: absolute;
+
+
+
+
+
+}
+
+.buy-modal-form {
+    position: relative;
+    width: 311px;
+    height: 994px;
+
+    background: #FAFAFA;
+    border-radius: 15px;
+}
+
+.buy-title {
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+
+    color: #111111;
+}
+
+.buy-title-color {
+    color: #FD9222;
+}
+
+.buy-item {
+    display: flex;
+    width: 263px;
+    height: 85px;
+    left: 24px;
+    top: 88px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.buy-item-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 6px 16px;
+    gap: 14px;
+
+    width: 70px;
+    height: 29px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+
+
+    color: #111111;
+
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+
+}
+
+.buy-input-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 263px;
+}
+
+.buy-submit-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 28px;
+    gap: 14px;
+
+    position: absolute;
+    width: 109px;
+    height: 41px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+
+
+    color: #FFFFFF;
+
+    background: #FD9222;
+    border-radius: 100px;
+    border-style: none;
+}

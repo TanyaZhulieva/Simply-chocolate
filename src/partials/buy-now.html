@@ -1,0 +1,126 @@
+<button class="buy-btn" type="button" data-modal-open="">Buy now</button>
+
+<form class="buy-modal-form">
+  <button class="buy-close-btn" type="button" data-modal-close>
+    <svg class="buy-close-icon" width="12" height="12">
+      <use
+        href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-close"
+      ></use>
+    </svg>
+  </button>
+  <h2 class="buy-title"><span class="buy-title-color">bUY</span> nOW</h2>
+
+  <div class="buy-img-wrap">
+    <ul class="buy-list">
+      <li class="buy-item">
+        <!-- якщо з srcset то зображення не відображується
+            srcset="./src/img/buy-modal-img/buy-img3-120.jpg 1x,
+                  ./src/img/buy-modal-img/buy-img3-240.jpg 2x"
+                   -->
+        <img
+          class="buy-img"
+          src="../img/buy-modal-img/buy-img1-120.jpg"
+          alt="chocolate"
+          width="84"
+          height="69"
+        />
+        <button class="buy-item-btn" type="button" data-modal-open="">
+          100 g
+        </button>
+      </li>
+      <li class="buy-item">
+        <img
+          class="buy-img"
+          src="../img/buy-modal-img/buy-img2-120.jpg"
+          alt="chocolate"
+          width="84"
+          height="69"
+        />
+        <button class="buy-item-btn" type="button" data-modal-open="">
+          200 g
+        </button>
+      </li>
+      <li class="buy-item">
+        <img
+          class="buy-img"
+          src="../img/buy-modal-img/buy-img3-120.jpg"
+          alt="chocolate"
+          width="84"
+          height="69"
+        />
+        <button class="buy-item-btn" type="button" data-modal-open="">
+          300 g
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Personal information -->
+  <div class="buy-input-wrap">
+    <label class="buy-form-label" for="modal_name">Personal information</label>
+    <input
+      class="buy-form-field"
+      type="text"
+      name="modal_name"
+      id="modal_name"
+      placeholder="Name"
+    />
+    <input
+      class="buy-form-field"
+      type="text"
+      name="modal_name"
+      id="modal_name"
+      placeholder="Surname"
+    />
+    <!-- Email -->
+    <label class="buy-form-label" for="modal_email">Email</label>
+    <input
+      class="buy-form-field"
+      type="text"
+      name="modal_email"
+      id="modal_email"
+      placeholder="Enter your email"
+    />
+    <!-- Phone number -->
+    <label class="buy-form-label" for="modal_phone">Phone</label>
+    <input
+      class="buy-form-field"
+      type="text"
+      name="modal_phone"
+      id="modal_phone"
+      placeholder="Phone number"
+    />
+    <svg class="buy-form-icon" width="24" height="18">
+      <use
+        href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
+      ></use>
+    </svg>
+    <!-- Card number -->
+    <label class="buy-form-label" for="modal_card">Card number</label>
+    <input
+      class="buy-form-field"
+      type="text"
+      name="modal_card"
+      id="modal_card"
+      placeholder="Enter card"
+    />
+    <svg class="buy-form-icon" width="22" height="13">
+      <use
+        href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
+      ></use>
+    </svg>
+    <!-- Comment -->
+    <label class="form-label" for="modal_comment">Comment</label>
+    <textarea
+      class="buy-form-comment"
+      name="modal_comment"
+      id="modal_comment"
+      rows="6"
+      placeholder="Enter text"
+    ></textarea>
+  </div>
+
+  <button class="buy-submit-btn" type="button" data-modal-open="">
+    Submit
+  </button>
+</form>
