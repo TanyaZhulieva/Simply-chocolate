@@ -2,27 +2,6 @@
 
 /* ??????????????????? */
 
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 20px;
-  height: 1000px;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,20 +17,201 @@
 
 /* ??????????????????? */
 
-.hero-content-wrapper {
-  margin-top: auto;
-}
-
 .hero {
   background-color: #1e1823;
   background-image: url(../img/hero-img/hero_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 30px;
   max-width: 1136px;
+  height: 620px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 40px;
+    height: 890px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero-img/hero_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .hero {
+    background-image: url(../img/hero-img/hero_tab@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../img/hero-img/hero_tab@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: url(../img/hero-img/hero_desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../img/hero-img/hero_desk@2x.jpg);
+    }
+  }
+}
+
+.hero-subtitle {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--txt-color-dark-theme);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 28px;
+    line-height: 1.21;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 484px;
+  }
+}
+
+.hero-modal-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--txt-color-dark-theme);
+
+  width: 120px;
+  height: 41px;
+  padding: 0;
+  margin-right: 14px;
+  border: none;
+
+  background: var(--accent-color);
+  border-radius: 100px;
+
+  transition: background-color 300ms ease-in;
+}
+
+.hero-modal-btn:hover,
+.hero-modal-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-modal-btn {
+    width: 144px;
+    height: 45px;
+  }
+}
+
+.hero-scroll-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--txt-color-dark-theme);
+  background-color: transparent;
+
+  padding: 0;
+  width: 159px;
+  height: 41px;
+
+  border: 1px solid var(--white-color);
+  border-radius: 100px;
+
+  transition: border-color 300ms ease-in, color 300ms ease-in,
+    background-color 300ms ease-in;
+}
+
+.hero-scroll-btn:hover,
+.hero-scroll-btn:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-scroll-btn {
+    width: 183px;
+    height: 45px;
+  }
+}
+
+.hero-scroll-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--txt-color-dark-theme);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-scroll-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero-down-btn {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  border: none;
+}
+
+.hero-down-btn:hover,
+.hero-down-btn:focus {
+  background-color: var(--accent-color);
+}
+
+.hero-down-btn:hover + .hero-scroll-text {
+  color: var(--accent-color);
+}
+.hero-down-btn:focus + .hero-scroll-text {
+  color: var(--accent-color);
+}
+
+/* доробити ховери фокуси коли буде іконка 
+і розмір іконки для пристроїв */
+
+@media only screen and (min-width: 768px) {
+  .hero-down-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.hero-down-icon {
+  fill: var(--accent-color);
 }
 
 /* ================= /HERO =============== */
