@@ -9,17 +9,6 @@ p {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
 }
@@ -29,3 +18,48 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.link {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.section {
+  padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 128px;
+  }
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+
+
+
