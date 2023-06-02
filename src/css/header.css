@@ -1,13 +1,16 @@
 .header{
   top: 0;
   width: 100%;
-  background-color:#FCF1E0;
+  background-color:#FFFFFF;
 }
 .header-container{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+     margin-top: 20px;
+     margin-left: 20px;
+     height: 28px;
+    
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
 @media only screen and (min-width: 767px) and (max-width: 1px){
     .header-container {
@@ -22,4 +25,11 @@
     }}
 .header-logo{
     margin-right: auto;
+}.header-item{
+
 }
+@media screen and (max-width: 767px){
+    .navi-item{
+     display: none;
+    } 
+ }
