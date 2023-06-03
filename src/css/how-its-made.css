@@ -96,35 +96,43 @@ button {
 @media only screen and (min-width: 1200px) {
     .recipe-general {
         flex-direction: row;
-        gap: 20px;
     }
 }
 
 .recipe-left-side {
     position: relative;
-    max-width: 335px;
+    height: 500px;
+    width: 335px;
 }
 
 @media only screen and (min-width: 768px) {
     .recipe-left-side {
-        max-width: 614px;
+        height: 400px;
+        width: 614px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .recipe-left-side {
-        max-width: 600px;
+        height: 400px;
+        width: 600px;
     }
 }
 
 .recipe-img {
-    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-.recipe-button {
+
+.recipe-btn-icon {
     position: absolute;
-    top: calc(45%);
-    left: calc(45%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
     justify-content: center;
@@ -136,11 +144,20 @@ button {
     border-radius: 50%;
     border: 1px solid white;
     background-color: transparent;
-
 }
 
-.recipe-button-icon {
-    fill: ;
+@media only screen and (min-width: 768px) {
+    .recipe-btn-icon {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.recipe-btn-icon:hover,
+.recipe-btn-icon:focus {
+    color: #FD9222;
+    border: 1px solid #FD9222;
+    background-color: transparent;
 }
 
 .recipe-right-side {
@@ -160,6 +177,7 @@ button {
 @media only screen and (min-width: 1200px) {
     .recipe-right-side {
         max-width: 452px;
+        height: 336px;
     }
 }
 
@@ -206,13 +224,6 @@ button {
     line-height: 1.29;
     letter-spacing: 0.03em;
 }
-
-/* .recipe-item::marker {
-    width: 8px;
-    height: 8px;
-    background: #4C4C4C;
-    border: 1px solid #ECEDED;
-} */
 
 .recipe-item:not(:last-child) {
     margin-bottom: 18px;
