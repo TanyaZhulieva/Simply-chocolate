@@ -16,9 +16,18 @@
 }
 
 /* ??????????????????? */
+.hero-container {
+  padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    padding-bottom: 40px;
+  }
+}
 
 .hero {
-  background-color: #1e1823;
+  background-color: var(--dark-bg-color);
   background-image: url(../img/hero-img/hero_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -28,12 +37,10 @@
   height: 620px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    padding-bottom: 40px;
     height: 890px;
   }
 }
@@ -170,6 +177,13 @@
   line-height: 1.17;
   letter-spacing: -0.03em;
   color: var(--txt-color-dark-theme);
+
+  transition: color 300ms ease-in;
+}
+
+.hero-scroll-text:hover,
+.hero-scroll-text:focus {
+  color: var(--accent-color);
 }
 
 @media only screen and (min-width: 768px) {
@@ -180,28 +194,21 @@
 }
 
 .hero-down-btn {
-  display: block;
   width: 28px;
   height: 28px;
-  background-color: var(--white-color);
   border-radius: 50%;
   border: none;
+  padding: 0;
 }
 
-.hero-down-btn:hover,
-.hero-down-btn:focus {
-  background-color: var(--accent-color);
-}
-
-.hero-down-btn:hover + .hero-scroll-text {
-  color: var(--accent-color);
-}
-.hero-down-btn:focus + .hero-scroll-text {
+/* .hero-down-btn:hover .hero-scroll-text {
   color: var(--accent-color);
 }
 
-/* доробити ховери фокуси коли буде іконка 
-і розмір іконки для пристроїв */
+.hero-down-btn:focus .hero-scroll-text {
+  color: var(--accent-color);
+} */
+/* доробити ховери фокуси для тексту скрол давн */
 
 @media only screen and (min-width: 768px) {
   .hero-down-btn {
@@ -210,8 +217,49 @@
   }
 }
 
+.hero-down-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--white-color);
+
+  transition: background-color 300ms ease-in;
+}
+
+.hero-down-link:hover,
+.hero-down-link:focus {
+  background-color: var(--accent-color);
+}
+
 .hero-down-icon {
   fill: var(--accent-color);
+
+  transition: fill 300ms ease-in;
+}
+
+.hero-down-link:hover .hero-down-icon {
+  fill: var(--white-color);
+}
+.hero-down-link:focus .hero-down-icon {
+  fill: var(--white-color);
+}
+
+/* .hero-down-link:hover + .hero-scroll-text {
+  color: var(--accent-color);
+}
+
+.hero-down-link:focus + .hero-scroll-text {
+  color: var(--accent-color);
+} */
+
+@media only screen and (min-width: 768px) {
+  .hero-down-icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 /* ================= /HERO =============== */
