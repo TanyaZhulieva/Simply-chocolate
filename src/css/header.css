@@ -33,9 +33,7 @@
 }
 @media only screen and (min-width: 767px) and (max-width: 1199px){
     .header-container {
-        margin:0 auto;
-        
-        width: 100%;
+        margin:0 auto; 
         }}
 
 .header-nav{
@@ -75,20 +73,116 @@
         flex-direction: row;
         gap: 24px;
     }
-    }   
-       
+    }  
+    
 .header-socials{
+    display: none;
+    }
+@media only screen and (min-width: 1200px) {
+   .header-socials{
     display: flex;
     margin-left: auto;
-}.header-logo{
-   margin-right: 188px; 
     
+  }
+}       
+.header-logo{
+    margin-right:auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+ 
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.03em;
+ 
+    color: #111111;   
+align-items: center;
 }
+@media only screen and (min-width:1200px) {
+    .header-logo{
+        margin-right:auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+     
+        font-size: 18px;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+     
+        color: #111111;   
+    
+  }
+}
+.part-logo {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+ 
+    letter-spacing: -0.03em;
+ 
+   color: #111111;
+   
+
+}
+ 
+
+@media only screen and (min-width: 1200px) {
+    .part-logo {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.11;
+     
+        letter-spacing: -0.03em;
+     
+       color: #111111;
+
+    
+  }
+} 
+.icon-logo{
+    vertical-align: middle;
+}
+   
 .header-navi-link{
     display: block;
     padding-top: 28px;
     padding-bottom: 28px;
 }
 .social-icon{
-    fill: aqua;
+    stroke: var(--txt-color-light-theme);
 }
+.icon-burger{
+    stroke:var(--txt-color-light-theme)
+}
+.menu-toggle {
+    min-height: 24px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1); ;
+    /* border-radius: 50%; */
+    outline: none;
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+  
+    display: flex;
+    flex-direction: column;} 
+    
+    .menu-container .menu-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
