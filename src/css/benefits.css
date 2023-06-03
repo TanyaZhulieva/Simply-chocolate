@@ -10,13 +10,13 @@
   margin: -1px;
 }
 
-.container{
+.advantages-container{
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .advantages-container {
     padding-top: 50px;
     padding-bottom: 50px;
     max-width: 768px;
@@ -24,7 +24,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {
+  .advantages-container {
     max-width: 1174px;
   }
 }
@@ -94,7 +94,7 @@
   
   font-weight: 600;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.21;
   text-align: start;
   
   color: var(--txt-color-dark-theme);
