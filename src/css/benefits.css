@@ -67,6 +67,7 @@
 
 @media only screen and (min-width: 1200px) {
   .advantages-item {
+    position: relative;
     --item: 3;
     flex-basis: calc((100% - 70px * (var(--item) - 1)) / var(--item));
     }
@@ -106,24 +107,25 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
-  
+    
 }
 
-.text-wrapper{
+/* .text-wrapper{
   position: relative;
   max-width: 308px;
-}
+} */
 
 @media only screen and (min-width: 1200px) {
-  .text-wrapper::after{
+  .advantages-item:not(:last-child)::before{
     content:'';
     display: block;
     position: absolute;
     height: 124px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    top: -25px;
-    right: 0;
-    margin-right: -18px;
+    left: 100%;
+    bottom: 15%;
+    margin-left: 18px;
+    
      }
     
     }
