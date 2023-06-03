@@ -9,6 +9,7 @@
 
   background-color: #fafafa;
   border-radius: 15px;
+  opacity: 1;
 }
 
 .backdrope-explore.is-hidden {
@@ -26,12 +27,23 @@
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
+  /* padding: 0 24px 24px 24px; */
 
   width: 311px;
   min-height: 350px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+
   background-color: #fafafa;
+  /* background-image: url(../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.jpg); */
   border-radius: 15px;
   opacity: 1;
+}
+
+.backdrope-explore.is-hidden .modal-explore {
+  opacity: 0;
+  transform: translate(-50%, -75%);
 }
 
 .modal-explore-close-btn {
@@ -49,15 +61,68 @@
   cursor: pointer;
 }
 
+.modal-explore-img {
+  padding-top: 6px;
+}
+
+.modal-explore-input {
+  margin: 26px 24px 32px;
+}
+
 .modal-explore-title {
   font-family: 'Montserrat';
 
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 24px;
 
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
   color: #111111;
+}
+
+.subscribe-form {
+  position: relative;
+  /* width: 264px; */
+}
+
+.modal-subscribe-input {
+  display: flex;
+  /* flex-direction: row;
+  align-items: flex-start;
+  gap: 40px; */
+  
+  padding: 0;
+  padding-left: 18px;
+
+  /* width: 100%; */
+  height: 45px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+}
+
+.modal-explore-name {
+  color: #fd9222;
+}
+
+.modal-explore-btn {
+  position: absolute;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  width: 100px;
+  height: 45px;
+  left: 163px;
+  top: 0px;
+
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
 }
