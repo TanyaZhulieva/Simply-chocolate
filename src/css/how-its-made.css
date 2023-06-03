@@ -29,6 +29,7 @@ button {
 
 .recipe-section {
     padding-bottom: 72px;
+    background-color: #E2E2E2;
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,12 +46,9 @@ button {
 
 .recipe-container {
     min-width: 320px;
-    max-width: 335px;
+    max-width: 375px;
     padding: 0;
     margin: 0 auto;
-
-    outline: 2px solid red;
-    outline-offset: -2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,13 +90,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-    .recipe-general {
-        gap: 52px;
-    }
+    gap: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -109,6 +101,7 @@ button {
 }
 
 .recipe-left-side {
+    position: relative;
     max-width: 335px;
 }
 
@@ -120,7 +113,7 @@ button {
 
 @media only screen and (min-width: 1200px) {
     .recipe-left-side {
-        max-width: 516px;
+        max-width: 600px;
     }
 }
 
@@ -129,35 +122,29 @@ button {
 }
 
 .recipe-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    top: 30%;
-    left: 50%;
-    background-color: var(--color-cornflower);
+    top: calc(45%);
+    left: calc(45%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid #FFFFFF;
-    padding: 0;
-    cursor: pointer;
-    transition: orange cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid white;
+    background-color: transparent;
+
 }
 
-
-.recipe-button:hover,
-.recipe-button:focus {
-    background-color: var(--active-color);
-    border: none;
-    fill: #ffffff;
+.recipe-button-icon {
+    fill: ;
 }
-
-
-.recipe-button-icon {}
 
 .recipe-right-side {
-    max-width: 335px;
+    max-width: 307px;
     padding: 20px 14px;
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -165,14 +152,14 @@ button {
 
 @media only screen and (min-width: 768px) {
     .recipe-right-side {
-        max-width: 614px;
+        max-width: 550px;
         padding: 32px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .recipe-right-side {
-        max-width: 516px;
+        max-width: 452px;
     }
 }
 
@@ -186,17 +173,46 @@ button {
 @media only screen and (min-width: 768px) {
     .recipe-subtitle {
         margin-bottom: 28px;
-
+        padding-right: 200px;
     }
 }
 
-.recipe-list {}
+@media only screen and (min-width: 1200px) {
+    .recipe-subtitle {
+        padding-right: 102px;
+    }
+}
+
+.recipe-list {
+    padding-left: 14px;
+    list-style-type: disc;
+}
+
+@media only screen and (min-width: 768px) {
+    .recipe-list {
+        padding-right: 70px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .recipe-list {
+        padding-right: 27px;
+    }
+}
 
 .recipe-item {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.03em;
 }
+
+/* .recipe-item::marker {
+    width: 8px;
+    height: 8px;
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
+} */
 
 .recipe-item:not(:last-child) {
     margin-bottom: 18px;
