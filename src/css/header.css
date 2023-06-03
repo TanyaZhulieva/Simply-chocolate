@@ -75,12 +75,8 @@
         flex-direction: row;
         gap: 24px;
     }
-    }
-    
-    
-    
-    
-    
+    }   
+       
 .header-socials{
     display: flex;
     margin-left: auto;
