@@ -57,60 +57,71 @@
 
   <!-- Personal information -->
   <div class="buy-input-wrap">
-    <label class="buy-form-label" for="modal_name">Personal information</label>
-    <input
-      class="buy-form-field"
-      type="text"
-      name="modal_name"
-      id="modal_name"
-      placeholder="Name"
-    />
-    <input
-      class="buy-form-field"
-      type="text"
-      name="modal_name"
-      id="modal_name"
-      placeholder="Surname"
-    />
+    <div class="buy-inf-wrap">
+      <label class="buy-form-label" for="modal_name"
+        >Personal information</label
+      >
+      <input
+        class="buy-form-field buy-person-inf"
+        type="text"
+        name="modal_name"
+        id="modal_name"
+        placeholder="Name"
+      />
+      <input
+        class="buy-form-field"
+        type="text"
+        name="modal_name"
+        id="modal_name"
+        placeholder="Surname"
+      />
+    </div>
     <!-- Email -->
     <label class="buy-form-label" for="modal_email">Email</label>
     <input
-      class="buy-form-field"
+      class="buy-form-field buy-email"
       type="text"
       name="modal_email"
       id="modal_email"
       placeholder="Enter your email"
     />
     <!-- Phone number -->
-    <label class="buy-form-label" for="modal_phone">Phone</label>
-    <input
-      class="buy-form-field"
-      type="text"
-      name="modal_phone"
-      id="modal_phone"
-      placeholder="Phone number"
-    />
-    <svg class="buy-form-icon" width="24" height="18">
-      <use
-        href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
-      ></use>
-    </svg>
+    <div class="buy-phone-wrap create-line-left">
+      <label class="buy-form-label" for="modal_phone">Phone</label>
+      <input
+        class="buy-form-field buy-phone-icon"
+        type="tel"
+        value="+380"
+        data-tel-input
+        name="modal_phone"
+        id="modal_phone"
+        placeholder="Phone number"
+      />
+      <svg class="buy-flag-icon" width="24" height="18">
+        <use
+          href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
+        ></use>
+      </svg>
+    </div>
+
     <!-- Card number -->
-    <label class="buy-form-label" for="modal_card">Card number</label>
-    <input
-      class="buy-form-field"
-      type="text"
-      name="modal_card"
-      id="modal_card"
-      placeholder="Enter card"
-    />
-    <svg class="buy-form-icon" width="22" height="13">
-      <use
-        href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
-      ></use>
-    </svg>
+    <div class="buy-card-wrap">
+      <label class="buy-form-label" for="modal_card">Card number</label>
+      <input
+        class="buy-form-field"
+        type="text"
+        name="modal_card"
+        id="modal_card"
+        placeholder="Enter card"
+      />
+      <svg class="buy-card-icon" width="22" height="13">
+        <use
+          href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
+        ></use>
+      </svg>
+    </div>
     <!-- Comment -->
-    <label class="form-label" for="modal_comment">Comment</label>
+    <label class="buy-form-label" for="modal_comment">Comment</label>
     <textarea
       class="buy-form-comment"
       name="modal_comment"

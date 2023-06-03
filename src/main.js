@@ -3,6 +3,7 @@
 let buyBtn = document.querySelector('.buy-btn');
 let buyModalForm = document.querySelector('.buy-modal-form');
 let buyCloseBtn = document.querySelector('.buy-close-btn');
+ 
 
 buyBtn.addEventListener('click', () => {
     buyModalForm.classList.add('buy-active');
@@ -10,5 +11,13 @@ buyBtn.addEventListener('click', () => {
 
 buyCloseBtn.addEventListener('click', (e) => {
     e.preventDefault();
-     buyModalForm.classList.remove('buy-active');
+    buyModalForm.classList.remove('buy-active');
 });
+
+let submitBtn = document.querySelector('.buy-submit-btn');
+
+submitBtn.addEventListener('click', (e) => {
+    buyModalForm.classList.remove('buy-active');
+});
+ 
+

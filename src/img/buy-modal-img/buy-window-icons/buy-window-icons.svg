@@ -28,5 +28,8 @@
             <path fill="#0057b7" style="fill: var(--color5, #0057b7)" d="M0.311 1.355h40.434v15.045h-40.434v-15.045z">
             </path>
         </symbol>
+        <symbol id="icon-play3" viewBox="0 0 32 32">
+            <path d="M6 4l20 12-20 12z"></path>
+        </symbol>
     </defs>
 </svg>
