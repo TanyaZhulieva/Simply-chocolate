@@ -1,141 +1,126 @@
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 20px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
-        padding: 50px 32px;
-        max-width: 768px;
-    }
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 768px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .container {
-        padding: 50px;
-        max-width: 1200px;
-    }
+  .container {
+    max-width: 1174px;
+  }
 }
-
 
 .advantages-section {
-    background-color: #1E1823;
-    color: #FFFFFF;
+  background-color: var(--dark-bg-color);
 }
-
-
 
 .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 28px;
-    row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+@media only screen and (min-width: 768px) {
+  .advantages-list {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-list {
+    gap: 70px;
+  }
+  
+}
+
+
+/* For line */
+
+.
+
+
+@media only screen and (min-width: 1200px) {
+    s::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 124px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transform: rotate(90deg);
+    }
+  }
+  
+
 
 
 
 
 .advantages-item {
-    --item: 1;
-    flex-basis: calc((100% - 28px * (var(--item) - 1)) / var(--item));
-
+   --item: 1;
+  flex-basis: calc((100% - 20px * 1- 1)) / var(--item));
 }
 
 @media only screen and (min-width: 768px) {
-    .advantages-item {
-        --item: 2;
-    }
+  .advantages-item {
+    --item: 2;
+    flex-basis: calc((100% - 32px * (var(--item) - 1)) / var(--item));
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .advantages-item {
-         --item: 3;
-         flex-basis: calc((100% - 28px * (var(--item) - 1)) / var(--item));
-    }
+  .advantages-item {
+    --item: 3;
+    flex-basis: calc((100% - 70px * (var(--item) - 1)) / var(--item));
+    margin-right: 18px;
+  }
 }
 
-
 .advantages-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 62px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    margin-bottom: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
 .advantages-icon {
-    fill: #FD9222;
+  fill: var(--accent-color);
 }
-
-.text-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    position: relative;
-    max-width: 308px;
- }
-
- @media only screen and (min-width: 1200px) {
-    .text-wrapper::after{
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 124px;
-        height: 0px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        transform: rotate(90deg);
-        transform-origin: right center;
-          
-      }
- }
-
-
 
 
 .advantages-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: start;
-    color: #FFFFFF;
-    margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: start;
+  color: var(--txt-color-dark-theme);
+  margin-bottom: 18px;
 }
-
-@media only screen and (min-width: 1158px) {
-    .advantages-title {
-        letter-spacing: 0.01em;
-    }
-}
-
 
 .advantages-descr {
-    
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.7);
-    position: relative;
-   }
+  
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
 
-
-
+}
