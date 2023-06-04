@@ -1,7 +1,8 @@
  .header{
   top: 0;
   width: 100%;
-  background-color:#FFFFFF;
+  z-index: 3;
+  background-color:var(--light-bg-color);
   
 }
 @media only screen and (min-width: 768px) {
@@ -32,15 +33,14 @@
 }    
   }
  .header-container{
-    padding-right: 20px;
-    padding-left: 20px;
+
     display: flex;
     align-items: center;
-<<<<<<< Updated upstream
     justify-content: space-between;
     height: 24px;
+    width: 100%;
     padding-top: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
         
 }
 @media only screen and (min-width: 1200px) {
@@ -49,22 +49,11 @@
     padding-left: 32px;
     height: 24px;
     padding-top: 24px;
-    padding-bottom: 124px;
+    margin-bottom: 124px;
     background-color:var(--light-bg-color);
     
   }
 }
-
-    justify-content: center;
-    padding: 20px;
-
-
-@media only screen and (min-width: 768px) and (max-width: 1199px){
-    .header-container {
-    margin:0 auto; 
-
-        }}
->>>>>>> Stashed changes
 
  .header-logo {
     margin-right:auto;
@@ -162,38 +151,6 @@
     
   }
 }
-<<<<<<< Updated upstream
-=======
-.part-logo {
-    font-family: 'Montserrat';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.29;
- 
-    letter-spacing: -0.03em;
- 
-   color: #111111;
-   
-
-}
- 
-
-@media only screen and (min-width: 1200px) {
-    .part-logo {
-        font-family: 'Montserrat';
-        font-style: italic;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.11;
-        letter-spacing: -0.03em;
-        color: #111111;  
-  }
-} 
-.icon-logo{
-    vertical-align: middle;
-}
->>>>>>> Stashed changes
    
 .header-navi-link{
     display: block;
@@ -218,12 +175,7 @@
 }
 .icon-burger{
     stroke:var(--txt-color-light-theme)
-}
-    
-    
-  
-
-  
+}  
 
 .menu-toggle {
 
