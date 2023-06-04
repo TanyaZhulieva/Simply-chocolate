@@ -12,7 +12,7 @@
     padding-left: 20px;
     padding-top: 136px;
     padding-top: 20px;
-    background-color:var(--modal-background-color);
+    background-color:var(--dark-bg-color);
     z-index: 999;
   
     transform: translateX(100%);
@@ -27,6 +27,9 @@
         padding-left: 32px;
     } 
    }  
+   .menu-container.is-open {
+    transform: translateX(0);
+  }
     .menu-container .menu-toggle {
         position: absolute;
         top: 20px;
@@ -47,6 +50,15 @@
 .mobile-menu {
         margin-bottom: auto;  
     } 
+
+    .mobile-menu-item:not(:last-child){
+        margin-bottom: 24px;
+    }
+.mobile-menu-socials{
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+}
     .mobile-link .link {
       display: block;
       padding: 0px;
