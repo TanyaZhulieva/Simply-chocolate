@@ -1,17 +1,58 @@
 <div class="backdrope-explore js-open-modal" data-modal="3">
   <div class="modal" data-modal="3">
     <button class="modal-explore-close-btn" type="button" data-modal-close>
-      <svg class="modal-explore-close-icon js-modal-close" width="24" height="24">
+      <svg
+        class="modal-explore-close-icon js-modal-close"
+        width="24"
+        height="24"
+      >
         <use href="../img/icons.svg#x-close"></use>
       </svg>
     </button>
-
-    <img
-      class="modal-explore-img"
-      src="../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.jpg"
-      alt="pieces of chocolate bars"
-      width="311px"
-    />
+    <div class="modal-explore-img">
+      <picture>
+        <!-- Tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_tab.webp    1x,
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_tab@2x.webp 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_tab.jpg    1x,
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_tab@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <!-- Mobile -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.webp        1x,
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_mob@2x.webp 2x
+          "
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.jpg        1x,
+            ../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars_mob@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+      </picture>
+      <img
+        src="../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.jpg"
+        alt="pieces of chocolate bars"
+        width="538"
+        height="196"
+      />
+    </div>
     <div class="modal-explore-input">
       <h2 class="modal-explore-title">
         Explore our <br />
