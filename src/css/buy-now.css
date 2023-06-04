@@ -9,6 +9,7 @@
     display: block;
 }
 
+.buy-descr {}
 
 .buy-backdrop {
     position: fixed;
@@ -228,7 +229,7 @@
     }
 }
 
-.buy-item-btn {
+.buy-item-descr {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -237,13 +238,14 @@
     padding: 6px 16px;
     gap: 14px;
 
-    width: 70px;
-    height: 29px;
+    width: 38px;
+    height: 15px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
-
+    text-align: center;
+    /* line-height: 2; */
 
     color: #111111;
 
@@ -254,10 +256,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .buy-item-btn {
+    .buy-item-descr {
+        width: 94px;
+        height: 31px;
         margin: 0;
         padding: 0;
         margin-top: auto;
+        line-height: 2.3;
     }
 }
 
@@ -347,6 +352,14 @@
     margin-top: 29px;
 }
 
+@media only screen and (min-width: 768px) {
+    .create-line-left:before {
+        margin-left: 149px;
+        margin-top: 35px;
+        height: 32px;
+    }
+}
+
 .buy-form-label,
 .buy-form-field {
     font-weight: 500;
@@ -387,15 +400,44 @@
     }
 }
 
+
+.buy-mob-cod {
+    display: block;
+    position: absolute;
+    top: 39%;
+    left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+    color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-mob-cod {
+        left: 74px;
+        font-size: 18px;
+        line-height: 22px;
+
+
+    }
+}
+
 .buy-email {
     margin-bottom: 18px;
 }
 
 .buy-phone-icon {
-    padding-left: 106px;
+    padding-left: 120px;
     margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-phone-icon {
+        padding-left: 174px;
+    }
+}
 
 .buy-flag-icon {
     position: absolute;
@@ -404,6 +446,14 @@
     z-index: 1;
     pointer-events: none;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-flag-icon {
+        height: 32px;
+        width: 32px;
+        top: 35px;
+    }
 }
 
 .buy-card-wrap {
@@ -423,6 +473,13 @@
 
     pointer-events: none;
 
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-card-icon {
+        height: 18px;
+        width: 30px;
+    }
 }
 
 .buy-form-comment {
