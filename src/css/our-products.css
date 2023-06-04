@@ -3,16 +3,15 @@
     padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
-
     .our-product {
-        padding-top: 100px;
-        padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     }
 }
 @media only screen and (min-width: 1200px) {
     .our-product {
-        padding-top: 128px;
-        padding-bottom: 128px;
+    padding-top: 128px;
+    padding-bottom: 128px;
     }
 }
 
@@ -24,48 +23,44 @@
 }
 @media only screen and (min-width: 768px) {
     .product-container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        min-width: 768px;
-
+    min-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
     }
 }
 @media only screen and (min-width: 1200px) {
     .product-container {
-        max-width: 1174px;
+    max-width: 1174px;
     }
 }
 .product-title {
-    
     font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1.16;
-        
-        line-height:1.16;
-        text-align: center;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-    
-        color: #111111;
-        text-transform: uppercase;
-        margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.16;       
+    line-height:1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;   
+    color: #111111;
+
+    text-align: center;
+    margin-bottom: 50px;
     }
 .product-span {
-         color: #FD9222;
+    color: #FD9222;
   }
 .product-name {
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
-    /* identical to box height, or 133% */
-
     letter-spacing: -0.02em;
     text-transform: uppercase;
 
     color: #111111;
+
     margin: 0;
     text-align: center;
     margin-bottom: 2px;
@@ -74,36 +69,31 @@
 
 .product-desc {
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+
     margin: 0;
     text-align: center;
-    margin-bottom: 18px;
-    /* identical to box height, or 117% */
-
-    letter-spacing: -0.02em;
-
-    color: rgba(17, 17, 17, 0.7);
-   
+    margin-bottom: 18px;    
 }
 
 .price-holder {
-
     width: 94px;
     height: 33px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0px auto ;
+
     background-color: #FAFAFA;
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
 }
-
-
 
 
 .product-image {
@@ -115,10 +105,16 @@
 }
 
 .product-item {
-    width: 270px;
+    width: 335px;
     height: 364px;
     background-color: #fff;
     border-radius: 15px 15px 15px 15px;
+}
+@media only screen and (min-width: 768px) {
+
+    .product-item{
+        width: 270px;
+    }
 }
 
 .product-list {
