@@ -1,11 +1,65 @@
 /* */
 <!-- Modal window reviews -->
-<div class="reviews-backdrop">
+<div data-modal="2" class="modal reviews-backdrop">
   <div class="reviws-modal">
-    <button class="reviews-btn-close">
-      <svg class="reviews-icon-close" width="12" height="12">
-        <use href="/img/icons.svg#x-close"></use>
-      </svg>
-    </button>
+    <form class="modal-leave-review">
+      <button
+        data-modal-close
+        type="button"
+        class="reviews-btn-close js-modal-close"
+      >
+        <svg class="reviews-icon-close" width="12" height="12">
+          <use href="../img/icons.svg#x-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal-leave-review-header">
+        LEAVE A REVIEW <br />
+        ABOUT <span class="part-reviews-header">OUR CHOCOLATE</span>
+      </h2>
+      <label class="modal-leave-review-field">
+        <span class="modal-name">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-leave-review-input"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="3"
+          />
+        </span>
+      </label>
+
+      <label class="modal-leave-review-field">
+        <span class="modal-email">
+          <input
+            type="email"
+            name="user_email"
+            class="modal-leave-review-input"
+            placeholder="Enter your email"
+          />
+        </span>
+      </label>
+      <label class="modal-leave-review-field modal-leave-review-field-svg">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-leave-review-input modal-leave-review-input-phone"
+          placeholder="Phone number"
+        />
+        <svg class="modal-leave-review-icon" width="24" height="18">
+          <use href="../img/icons.svg#flag-ua"></use>
+        </svg>
+        <span class="modal-leave-review-phone-code">+380</span>
+      </label>
+      <label class="modal-leave-review-field leave-review-comment">
+        <textarea
+          name="user_message"
+          class="modal-leave-review-input modal-leave-review-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <button class="reviews-send" type="submit">Send</button>
+    </form>
   </div>
 </div>
