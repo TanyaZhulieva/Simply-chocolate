@@ -22,14 +22,13 @@
 
 :root {
   /* Color */
-  --txt-color-dark-theme: #FFFFFF;
+  --txt-color-dark-theme: #ffffff;
   --txt-color-light-theme: #111111;
-  --accent-color: #FD9222;
-  --dark-bg-color: #1E1823;
-  --light-bg-color: #FAFAFA;
-  --white-color: #FFFFFF;
+  --accent-color: #fd9222;
+  --dark-bg-color: #1e1823;
+  --light-bg-color: #fafafa;
+  --white-color: #ffffff;
 }
-
 
 /* montserrat-regular - latin */
 @font-face {
