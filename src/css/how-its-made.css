@@ -1,16 +1,9 @@
-/* reset start */
-
 h2,
 h3,
 p {
     margin: 0;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .list {
     list-style: none;
@@ -37,21 +30,19 @@ img {
 
 .recipe-container {
     min-width: 320px;
-    max-width: 335px;
+    max-width: 375px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
     .recipe-container {
-        /* max-width: 614px; */
         max-width: 678px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .recipe-container {
-        /* max-width: 1136px; */
         max-width: 1200px;
     }
 }
