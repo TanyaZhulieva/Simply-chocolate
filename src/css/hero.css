@@ -1,7 +1,5 @@
 /* ================= HERO =============== */
 
-/* ??????????????????? */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -14,8 +12,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* ??????????????????? */
 
 .hero {
   padding-bottom: 72px;
@@ -46,12 +42,6 @@
   justify-content: flex-end;
 }
 
-@media only screen and (min-width: 376px) and (max-width: 767px) {
-  .hero-container {
-    max-width: 95%;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .hero-container {
     padding-bottom: 40px;
@@ -60,15 +50,9 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1199px) {
-  .hero-container {
-    max-width: 95%;
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   .hero-container {
-    max-width: 1336px;
+    max-width: 1136px;
     min-height: 600px;
   }
 }
@@ -130,9 +114,27 @@
   }
 }
 
+.hero-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-btn-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .hero-btn-list {
   display: flex;
   margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-btn-list {
+    margin-bottom: 0;
+  }
 }
 
 .hero-btn-list-item:not(:last-child) {
@@ -153,7 +155,7 @@
   background: var(--accent-color);
   border-radius: 100px;
 
-  transition: background-color 300ms ease-in;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-btn:hover,
@@ -183,8 +185,9 @@
   border: 1px solid var(--white-color);
   border-radius: 100px;
 
-  transition: border-color 300ms ease-in, color 300ms ease-in,
-    background-color 300ms ease-in;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll-btn:hover,
@@ -218,7 +221,7 @@
   align-items: center;
   background-color: var(--white-color);
 
-  transition: background-color 300ms ease-in;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -235,7 +238,7 @@
   letter-spacing: -0.03em;
   color: var(--txt-color-dark-theme);
 
-  transition: color 300ms ease-in;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -248,7 +251,7 @@
 .hero-down-icon {
   fill: var(--accent-color);
 
-  transition: fill 300ms ease-in;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-down-link:hover .hero-down-icon {
