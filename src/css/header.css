@@ -154,7 +154,7 @@
     padding-bottom: 28px;
 }
 .social-icon {
-    stroke-linejoin: var(--txt-color-light-theme);
+    stroke: var(--txt-color-light-theme);
     /* fill:var(--accent-color) */
 }
 
