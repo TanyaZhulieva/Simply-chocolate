@@ -2,23 +2,60 @@
     padding-top: 72px;
     padding-bottom: 72px;
 }
+@media only screen and (min-width: 768px) {
 
-.product-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-
-    color: #111111;
-    margin: 0;
-    text-align: center;
-    margin-top: 8px;
+    .our-product {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
+@media only screen and (min-width: 1200px) {
+    .our-product {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+}
+
+.product-container {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+    .product-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-width: 768px;
+
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .product-container {
+        max-width: 1174px;
+    }
+}
+.product-title {
+    
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        /* identical to box height, or 117% */
+    
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+    
+        color: #111111;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+.product-span {
+         color: #FD9222;
+  }
+
 
 .product-desc {
     font-family: 'Montserrat';
@@ -28,13 +65,13 @@
     line-height: 14px;
     margin: 0;
     text-align: center;
-    margin-top: 2px;
+    margin-bottom: 18px;
     /* identical to box height, or 117% */
 
     letter-spacing: -0.02em;
 
     color: rgba(17, 17, 17, 0.7);
-    margin-bottom: 18px;
+   
 }
 
 .price-holder {
@@ -44,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0px auto ;
     background-color: #FAFAFA;
     background: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -52,38 +89,30 @@
 }
 
 .product-name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    /* identical to box height, or 117% */
-
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-
-    color: #111111;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+    
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    
+        color: #111111;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 2px;
+       
 }
 
-.product-span {
-    color: #FD9222;
-
-}
-
-.product-container {
-
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
 
 .product-image {
     padding-top: 32px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
 }
 
 .product-item {
@@ -98,30 +127,10 @@
     display: flex;
     justify-content: center;
     padding-left: 0px;
+    list-style: none;
 }
-
-.hidden-product-one,
-.hidden-product-two,
-.hidden-product-three {
-    display: none;
-}
-
 @media only screen and (min-width: 768px) {
-    .product-container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        min-width: 768px;
 
-    }
-
-    .hidden-product-one {
-        display: block;
-    }
-
-    .our-product {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
 
     .product-list {
         display: flex;
@@ -137,28 +146,33 @@
         gap: 18px;
         justify-content: center;
     }
+}
 
+.hidden-product-one,
+.hidden-product-two,
+.hidden-product-three {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .hidden-product-one {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 868px) {
     .hidden-product-two {
         display: block;
     }
 }
 
-
 @media only screen and (min-width: 1200px) {
-    .product-container {
-        max-width: 1174px;
-    }
-
+    
     .hidden-product-three {
         display: block;
     }
 
-    .our-product {
-        padding-top: 128px;
-        padding-bottom: 128px;
-    }
+
 }
 
-.products-list {
-    list-style: none;
-}
