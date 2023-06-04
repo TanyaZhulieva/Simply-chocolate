@@ -1,23 +1,23 @@
 // Buy now modal window
 
 let buyBtn = document.querySelector('.buy-btn');
-let buyModalForm = document.querySelector('.buy-modal-form');
+let buyBackdrop = document.querySelector('.buy-backdrop');
 let buyCloseBtn = document.querySelector('.buy-close-btn');
  
 
 buyBtn.addEventListener('click', () => {
-    buyModalForm.classList.add('buy-active');
+    buyBackdrop.classList.add('buy-active');
 });
 
 buyCloseBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    buyModalForm.classList.remove('buy-active');
+    buyBackdrop.classList.remove('buy-active');
 });
 
 let submitBtn = document.querySelector('.buy-submit-btn');
 
 submitBtn.addEventListener('click', (e) => {
-    buyModalForm.classList.remove('buy-active');
+    buyBackdrop.classList.remove('buy-active');
 });
  
 

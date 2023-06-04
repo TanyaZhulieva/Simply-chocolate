@@ -1,8 +1,80 @@
 /* js close btn */
-.buy-modal-form {
-    /* display: none; */
+.buy-backdrop {
+    display: none;
+
 
 }
+
+.buy-active {
+    display: block;
+}
+
+
+.buy-backdrop {
+    position: fixed;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(46, 47, 66, 0.4);
+
+    z-index: 10;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+    transition: opacity var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.buy-modal {
+    position: absolute;
+
+    width: 100%;
+    padding: 32px 24px;
+    max-height: 994px;
+    padding: 32px 24px;
+    background: #FAFAFA;
+    border-radius: 15px;
+    width: 95%;
+
+    height: 95%;
+    max-height: 954px;
+    overflow: scroll;
+}
+
+
+
+
+.buy-modal {
+    top: calc(50%);
+    left: calc(50%);
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+
+
+@media screen and (min-width: 311px) and (max-width: 767px) {
+    .buy-modal {
+        width: 263px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .buy-modal {
+        padding: 48px;
+        width: 513px;
+    }
+}
+
+
 
 .buy-active {
     display: block;
@@ -17,7 +89,19 @@
     align-items: center;
     letter-spacing: -0.02em;
 
-    color: rgba(64, 64, 64, 0.3);
+    color: #4040404d;
+}
+
+@media only screen and (min-width: 768px) {
+    ::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+
+        color: #4040404d;
+
+    }
 }
 
 .buy-btn {
@@ -40,7 +124,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
+
 
     color: #FFFFFF;
 
@@ -61,21 +145,15 @@
 
     position: absolute;
 
-
-
-
-
 }
 
-.buy-modal-form {
-    position: relative;
-    max-width: 263px;
-    padding: 32px 24px;
-    max-height: 994px;
-    padding: 32px 24px;
-    background: #FAFAFA;
-    border-radius: 15px;
+@media only screen and (min-width: 768px) {
+    .buy-close-btn {
+        left: 94%;
+    }
 }
+
+.buy-modal-form {}
 
 
 
@@ -101,6 +179,11 @@
     justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-list {
+        flex-direction: row;
+    }
+}
 
 .buy-item {
     display: flex;
@@ -115,13 +198,34 @@
 }
 
 
+@media only screen and (min-width: 768px) {
+    .buy-item {
+        flex-direction: column;
+        width: 117px;
+        height: 154px;
+
+        padding-top: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 18px;
+        align-items: center;
+
+    }
+}
+
 .buy-img {
-    /* display: block;
-    margin-top: auto;
-    margin-bottom: auto; */
+
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 16px;
+}
+
+@media only screen and (min-width: 769px) {
+    .buy-img {
+        margin: 0;
+        width: 120px;
+        height: 107px;
+    }
 }
 
 .buy-item-btn {
@@ -149,6 +253,14 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-item-btn {
+        margin: 0;
+        padding: 0;
+        margin-top: auto;
+    }
+}
+
 .buy-input-wrap {
     display: flex;
     position: relative;
@@ -157,17 +269,39 @@
     margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-input-wrap {
+        width: 100%;
+    }
+}
+
 .buy-inf-wrap {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-inf-wrap {
+
+        flex-direction: row;
+        gap: 21px;
+    }
+}
 
 .buy-list {
+    display: flex;
     margin-bottom: 32px;
+    flex-direction: column;
 
 
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-list {
+        flex-direction: row;
+        gap: 16px;
+    }
 }
 
 .buy-item:not(:last-child) {
@@ -178,6 +312,13 @@
     margin-bottom: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+
+    .buy-person-inf,
+    .buy-person-surname {
+        width: 246px;
+    }
+}
 
 .buy-phone-wrap {
     position: relative;
@@ -213,10 +354,21 @@
     line-height: 1.7;
     letter-spacing: -0.02em;
 
-
-
     color: #000000;
 
+}
+
+
+@media only screen and (min-width: 768px) {
+    .buy-form-label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        letter-spacing: -0.02em;
+
+        color: #000000;
+    }
 }
 
 .buy-form-field {
@@ -228,12 +380,19 @@
     border-radius: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+    .buy-form-field {
+        height: 22px;
+        padding: 22px 24px;
+    }
+}
+
 .buy-email {
     margin-bottom: 18px;
 }
 
 .buy-phone-icon {
-    padding-left: 50px;
+    padding-left: 106px;
     margin-bottom: 18px;
 }
 
@@ -269,24 +428,41 @@
 .buy-form-comment {
     display: block;
     height: 60px;
-
+    background-color: transparent;
     resize: none;
     padding: 14px 18px 14px 18px;
     border: 1.5px solid #1111110d;
     filter: drop-shadow(0px 5.44492px 5.44492px #00000008);
     border-radius: 8px;
 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
 
+    letter-spacing: -0.02em;
+
+    color: #4040404d;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .buy-form-comment {
+        padding-top: 22px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-bottom: 22px;
+        height: 137px;
+
+    }
 }
 
 .buy-submit-btn {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+
     padding: 12px 28px;
     gap: 14px;
 
-    position: absolute;
+
     width: 109px;
     height: 41px;
 
