@@ -132,16 +132,13 @@
   display: flex;
   margin-bottom: 32px;
   align-items: center;
+  gap: 14px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-btn-list {
     margin-bottom: 0;
   }
-}
-
-.hero-btn-list-item:not(:last-child) {
-  margin-right: 14px;
 }
 
 .hero-modal-btn {
