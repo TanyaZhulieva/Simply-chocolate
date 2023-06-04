@@ -23,7 +23,9 @@
             class="modal-subscribe-input"
             type="email"
             name="user_email"
+            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             placeholder="Enter your email"
+            title="Формат має бути таким example@gmail.com"
           />
           <!-- <span class="modal-explore-email">Enter your email</span> -->
           <button class="modal-explore-btn" type="submit">Submit</button>
