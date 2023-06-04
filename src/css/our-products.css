@@ -30,7 +30,7 @@
 }
 @media only screen and (min-width: 1200px) {
     .product-container {
-    max-width: 1174px;
+    max-width: 1200px;
     }
 }
 .product-title {
@@ -43,13 +43,13 @@
     line-height:1.16;
     letter-spacing: -0.03em;
     text-transform: uppercase;   
-    color: #111111;
+    color: var(--txt-color-light-theme);
 
     text-align: center;
     margin-bottom: 50px;
     }
 .product-span {
-    color: #FD9222;
+    color: var(--accent-color);
   }
 .product-name {
     font-family: 'Montserrat';
@@ -89,8 +89,8 @@
     align-items: center;
     margin: 0px auto ;
 
-    background-color: #FAFAFA;
-    background: #FAFAFA;
+    background-color:var(--light-bg-color);
+    background: var(--light-bg-color);;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
 }
@@ -107,7 +107,7 @@
 .product-item {
     width: 335px;
     height: 364px;
-    background-color: #fff;
+    background-color:var(--white-color);
     border-radius: 15px 15px 15px 15px;
 }
 @media only screen and (min-width: 768px) {
@@ -118,11 +118,11 @@
 }
 
 .product-list {
-    list-style: none;
+    
     display: flex;
     justify-content: center;
     padding-left: 0px;
-    list-style: none;
+    
 }
 @media only screen and (min-width: 768px) {
 
@@ -132,14 +132,6 @@
         gap: 18px;
         justify-content: center;
 
-    }
-}
-
-@media only screen and (min-width: 868px) {
-    .product-list {
-        display: flex;
-        gap: 18px;
-        justify-content: center;
     }
 }
 
@@ -154,13 +146,11 @@
     .hidden-product-one {
         display: block;
     }
+        .hidden-product-two {
+            display: block;
+        }
 }
 
-@media only screen and (min-width: 868px) {
-    .hidden-product-two {
-        display: block;
-    }
-}
 
 @media only screen and (min-width: 1200px) {
     
