@@ -4,7 +4,6 @@ p {
     margin: 0;
 }
 
-
 .list {
     list-style: none;
     padding: 0;
@@ -111,9 +110,8 @@ p {
     border-radius: 15px;
 }
 
-
 .recipe-btn-icon {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -127,7 +125,8 @@ p {
     height: 35px;
     border-radius: 50%;
     border: 1px solid white;
-    background-color: transparent;
+    background-color: transparent; */
+    fill: #FD9222;
 }
 
 @media only screen and (min-width: 768px) {
