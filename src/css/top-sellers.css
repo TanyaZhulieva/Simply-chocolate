@@ -1,12 +1,19 @@
 .sellers-title {
     font-weight: 600;
-    font-size: 24px;
-    line-height: 1.17;
+    font-size: 20px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
+    margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-title {
     margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .sellers-text {
     color: var(--txt-color-light-theme);
@@ -20,13 +27,39 @@
     gap: 16px;
 }
 .img-set-item {
+    flex-basis: calc(100% / 1);
+}
+@media only screen and (min-width: 768px) {
+  .img-set-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .img-set-item {
     flex-basis: calc((100% - 16px * 2) / 3);
+  }
 }
 .sellers-img {
     border-radius: 15px;
+    width: 335px;
 }
-.sellers-container {
+@media only screen and (min-width: 768px) {
+  .sellers-img {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-img {
+    width: 368px;
+  }
+}
+/* .sellers-container {
+    
+} */
+@media only screen and (min-width: 768px) {
+  .sellers-container {
     display: flex;
+  }
 }
 .sellers-desc {
     font-weight: 400;
@@ -34,19 +67,39 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--txt-color-light-theme);
+    width: 306px;
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-desc {
     width: 407px;
+  }
 }
 .sellers-btn {
-    min-width: 162px;
-    height: 50px;
-    padding: 14px 40px;
+    min-width: 120px;
+    height: 41px;
+    padding: 12px 28px;
     background: var(--accent-color);
     border-radius: 100px;
     border: none;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 14px;
+    line-height: 1.21;
     color: var(--white-color);
     margin: 0;
     margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-btn {
+    min-width: 162px;
+    height: 50px;
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .ghosts {
+    display: none;
+  }
 }
