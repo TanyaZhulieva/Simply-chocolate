@@ -16,72 +16,94 @@
 }
 
 /* ??????????????????? */
-.hero-container {
-  padding-bottom: 20px;
+
+.hero {
+  padding-bottom: 72px;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero-container {
-    padding-bottom: 40px;
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    padding-bottom: 50px;
   }
 }
 
-.hero {
+.hero-container {
   background-color: var(--dark-bg-color);
   background-image: url(../img/hero-img/hero_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 30px;
-  max-width: 1136px;
-  height: 620px;
+  max-width: 335px;
+  min-height: 620px;
   margin-left: auto;
   margin-right: auto;
+
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {
+  .hero-container {
+    max-width: 95%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .hero {
-    height: 890px;
+  .hero-container {
+    padding-bottom: 40px;
+    max-width: 704px;
+    min-height: 890px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .hero-container {
+    max-width: 95%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .hero {
-    height: 600px;
+  .hero-container {
+    max-width: 1336px;
+    min-height: 600px;
   }
 }
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
+  .hero-container {
     background-image: url(../img/hero-img/hero_mob@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 376px) {
-  .hero {
+  .hero-container {
     background-image: url(../img/hero-img/hero_tab@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero-container {
       background-image: url(../img/hero-img/hero_tab@2x.jpg);
     }
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .hero {
+  .hero-container {
     background-image: url(../img/hero-img/hero_desk@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero-container {
       background-image: url(../img/hero-img/hero_desk@2x.jpg);
     }
   }
@@ -108,6 +130,15 @@
   }
 }
 
+.hero-btn-list {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.hero-btn-list-item:not(:last-child) {
+  margin-right: 14px;
+}
+
 .hero-modal-btn {
   font-weight: 600;
   font-size: 14px;
@@ -117,7 +148,6 @@
   width: 120px;
   height: 41px;
   padding: 0;
-  margin-right: 14px;
   border: none;
 
   background: var(--accent-color);
@@ -171,6 +201,33 @@
   }
 }
 
+.hero-down-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-down-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+
+  transition: background-color 300ms ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-down-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 .hero-scroll-text {
   font-weight: 500;
   font-size: 12px;
@@ -181,57 +238,11 @@
   transition: color 300ms ease-in;
 }
 
-.hero-scroll-text:hover,
-.hero-scroll-text:focus {
-  color: var(--accent-color);
-}
-
 @media only screen and (min-width: 768px) {
   .hero-scroll-text {
     font-size: 14px;
     line-height: 1.29;
   }
-}
-
-.hero-down-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: none;
-  padding: 0;
-}
-
-/* .hero-down-btn:hover .hero-scroll-text {
-  color: var(--accent-color);
-}
-
-.hero-down-btn:focus .hero-scroll-text {
-  color: var(--accent-color);
-} */
-/* доробити ховери фокуси для тексту скрол давн */
-
-@media only screen and (min-width: 768px) {
-  .hero-down-btn {
-    width: 38px;
-    height: 38px;
-  }
-}
-
-.hero-down-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--white-color);
-
-  transition: background-color 300ms ease-in;
-}
-
-.hero-down-link:hover,
-.hero-down-link:focus {
-  background-color: var(--accent-color);
 }
 
 .hero-down-icon {
@@ -247,14 +258,6 @@
   fill: var(--white-color);
 }
 
-/* .hero-down-link:hover + .hero-scroll-text {
-  color: var(--accent-color);
-}
-
-.hero-down-link:focus + .hero-scroll-text {
-  color: var(--accent-color);
-} */
-
 @media only screen and (min-width: 768px) {
   .hero-down-icon {
     width: 22px;
@@ -262,4 +265,19 @@
   }
 }
 
+.hero-down-link:hover .hero-scroll-text {
+  color: var(--accent-color);
+}
+
+.hero-down-link:focus .hero-scroll-text {
+  color: var(--accent-color);
+}
+
+.hero-down-link:hover .hero-down-btn {
+  background-color: var(--accent-color);
+}
+
+.hero-down-link:focus .hero-down-btn {
+  background-color: var(--accent-color);
+}
 /* ================= /HERO =============== */
