@@ -27,7 +27,6 @@
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%);
-  /* padding: 0 24px 24px 24px; */
 
   width: 311px;
   min-height: 350px;
@@ -39,7 +38,15 @@
   /* background-image: url(../img/PVjacheslav/pop-up-explore/pieces_of_chocolate_bars.jpg); */
   border-radius: 15px;
   opacity: 1;
+  overflow: hidden;
 }
+
+/* @media only screen and (min-width: 768px) {
+  .modal-explore {
+    width: 538;
+
+  }
+} */
 
 .backdrope-explore.is-hidden .modal-explore {
   opacity: 0;
@@ -60,6 +67,11 @@
   height: 24px;
   cursor: pointer;
 }
+
+/* .modal-explore-close-icon {
+  color: transparent;
+  fill: none;
+} */
 
 .modal-explore-img {
   padding-top: 6px;
@@ -93,7 +105,7 @@
   /* flex-direction: row;
   align-items: flex-start;
   gap: 40px; */
-  
+
   padding: 0;
   padding-left: 18px;
 
