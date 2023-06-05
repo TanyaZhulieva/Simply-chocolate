@@ -76,9 +76,9 @@
 }
 
 .modal-explore-wrapper {
-  max-width: 311px;
+  max-width: 538px;
   width: 100%;
-  max-height: 169px;
+  max-height: 196px;
   height: 169px;
   background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars.jpg);
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@
   }
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 768px) {
   .modal-explore-wrapper {
     background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars_tab.jpg);
   }
