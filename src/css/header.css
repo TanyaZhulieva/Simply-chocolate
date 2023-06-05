@@ -59,7 +59,7 @@
     line-height: 1.29;
     letter-spacing: -0.03em;
     color:var(--txt-color-light-theme);   
-    align-items: center;
+    
     }
         
 @media only screen and (min-width:1200px) {
