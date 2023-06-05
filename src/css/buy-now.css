@@ -52,7 +52,7 @@
 
 
 .buy-modal {
-    top: calc(50%);
+    top: calc(60%);
     left: calc(50%);
     transform: translateX(-50%) translateY(-50%) scale(1);
 }
@@ -130,10 +130,9 @@
     justify-content: center;
     padding: 0;
     top: 14px;
-    left: 88%;
+    right: 14px;
 
-    width: 24px;
-    height: 24px;
+
     background-color: transparent;
     border-style: none;
 
@@ -166,13 +165,12 @@
     color: #FD9222;
 }
 
-.buy-img-wrap {
-    display: flex;
-    justify-content: center;
-}
+.buy-img-wrap {}
 
 @media only screen and (min-width: 768px) {
     .buy-list {
+        display: flex;
+        justify-content: center;
         flex-direction: row;
     }
 }
@@ -181,8 +179,10 @@
     display: flex;
     width: 263px;
     height: 85px;
-    left: 24px;
-    top: 88px;
+    padding: 8px 16px;
+
+    align-items: center;
+    gap: 77px;
 
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -194,7 +194,7 @@
         flex-direction: column;
         width: 117px;
         height: 154px;
-
+        gap: 14px;
         padding-top: 24px;
         padding-left: 20px;
         padding-right: 20px;
@@ -202,13 +202,6 @@
         align-items: center;
 
     }
-}
-
-.buy-img {
-
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 16px;
 }
 
 @media only screen and (min-width: 769px) {
@@ -221,10 +214,7 @@
 
 .buy-item-descr {
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 16px;
+
     padding: 6px 16px;
     gap: 14px;
 
@@ -286,8 +276,9 @@
 
 .buy-list {
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     flex-direction: column;
+    gap: 8px;
 
 }
 
@@ -298,9 +289,6 @@
     }
 }
 
-.buy-item:not(:last-child) {
-    margin-bottom: 8px;
-}
 
 .buy-person-inf {
     margin-bottom: 14px;
@@ -351,7 +339,7 @@
 .buy-form-field {
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.17;
     letter-spacing: -0.02em;
 
     color: #000000;
