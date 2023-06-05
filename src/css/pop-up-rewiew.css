@@ -86,6 +86,8 @@
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
+}
+.modal-leave-review-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
 @media only screen and (min-width: 768px) {
@@ -138,6 +140,14 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
 }
+@media only screen and (min-width: 768px) {
+  .modal-leave-review-phone-code {
+    font-size: 18px;
+    line-height: 1.22;
+    top: -2px;
+    left: 74px;
+  }
+}
 .modal-leave-review-phone-code::after {
   content: '';
   position: absolute;
@@ -149,13 +159,22 @@
   height: 25px;
   background-color: rgba(0, 0, 0, 0.1);
 }
+@media only screen and (min-width: 768px) {
+  .modal-leave-review-phone-code::after {
+    margin-left: 32px;
+    height: 32px;
+  }
+}
 .modal-leave-review-message {
   padding-top: 14px;
   font-size: 14px;
   resize: none;
   height: 91px;
   letter-spacing: -0.02em;
+}
+.modal-leave-review-message::placeholder {
   color: rgba(64, 64, 64, 0.3);
+  padding-top: 9px;
 }
 @media only screen and (min-width: 768px) {
   .modal-leave-review-message {
