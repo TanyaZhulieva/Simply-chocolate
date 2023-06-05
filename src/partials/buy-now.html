@@ -1,0 +1,112 @@
+<div class="buy-backdrop">
+  <div class="buy-modal">
+    <button type="buy-button" class="buy-modal-close-btn" data-modal-close>
+      <svg class="buy-modal-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#x-close"></use>
+      </svg>
+    </button>
+    <h2 class="title"><span class="buy-accent-title">bUY</span> nOW</h2>
+    <ul class="article-list list">
+      <li class="article-item">
+        <img
+          class="article-photo"
+          srcset="./img/buy-now/img-1-mob_84.jpg, 
+          ./img/buy-now/img-1-mob_168 2x.jpg, 
+          ./img/buy-now/img-1-mob_121.jpg, 
+          ./img/buy-now/img-1-mob_242 2x.jpg"
+          src="./img/buy-now/img-1-mob_84.jpg"
+          alt=""
+          width="84"
+        />
+        <p>100 g</p>
+      </li>
+      <li class="article-item">
+        <img
+          class="article-photo"
+          srcset="./img/buy-now/img-2-mob_84.jpg, 
+          ./img/buy-now/img-2-mob_168 2x.jpg, 
+          ./img/buy-now/img-2-mob_121.jpg, 
+          ./img/buy-now/img-2-mob_242 2x.jpg"
+          src="./img/buy-now/img-2-mob_84.jpg"
+          alt=""
+          width="84"
+        />
+        <p>200 g</p>
+      </li>
+      <li class="article-item">
+        <img
+          class="article-photo"
+          srcset="./img/buy-now/img-3-mob_84.jpg, 
+          ./img/buy-now/img-3-mob_168 2x.jpg, 
+          ./img/buy-now/img-3-mob_121.jpg, 
+          ./img/buy-now/img-3-mob_242 2x.jpg"
+          src="./img/buy-now/img-3-mob_84.jpg"
+          alt=""
+          width="84"
+        />
+        <p>300 g</p>
+      </li>
+    </ul>
+    <form class="buy-modal-form">
+      <label class="buy-form-label">
+        <input
+          class="buy-form-field"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="buy-form-label">
+        <input
+          class="buy-form-field"
+          type="text"
+          name="user-surname"
+          placeholder="Surname"
+        />
+      </label>
+      <label class="buy-form-label" for="user-email"> Email </label>
+      <input
+        class="buy-form-field"
+        type="email"
+        name="email"
+        id="user-email"
+        placeholder="Enter your email"
+      />
+      <label class="buy-form-label" for="user-phone"> Phone number </label>
+      <div class="buy-form-wrapper">
+        <input
+          class="buy-form-field"
+          type="tel"
+          name="phone"
+          id="user-phone"
+          placeholder="Phone number"
+        />
+        <svg class="buy-flag-icon" width="24" height="24">
+          <use href="./img/icons.svg#flag-ua"></use>
+        </svg>
+      </div>
+      <label class="buy-form-label" for="user-card"> Card number </label>
+      <div class="buy-form-wrapper">
+        <input
+          class="buy-form-field"
+          type="number"
+          name="user-card"
+          id="user-card"
+          placeholder="Enter card"
+        />
+        <svg class="buy-card-icon" width="32" height="21">
+          <use href="../img/icons.svg#mastercard"></use>
+        </svg>
+      </div>
+      <label class="form-label" for="user-comment"> Comment </label>
+      <textarea
+        class="buy-form-comment"
+        name="comment"
+        id="user-comment"
+        rows="5"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="form-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
