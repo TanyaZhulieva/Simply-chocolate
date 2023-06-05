@@ -76,15 +76,14 @@
 }
 
 .modal-explore-wrapper {
-  max-width: 538px;
-  width: 100%;
-  max-height: 196px;
+  width: 311px;
   height: 169px;
+  
   background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars.jpg);
   background-repeat: no-repeat;
   background-color: var(--white-color);
   overflow: hidden;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -100,6 +99,8 @@
 
 @media only screen and (min-width: 768px) {
   .modal-explore-wrapper {
+    width: 538px;
+    height: 196px;
     background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars_tab.jpg);
   }
 
@@ -123,8 +124,6 @@
 }
 
 .modal-explore-title {
-  /* font-family: 'Montserrat'; */
-
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -144,9 +143,8 @@
   }
 }
 
-.subscribe-form {
+.modal-explore-form {
   position: relative;
-  /* width: 264px; */
 }
 
 .modal-subscribe-input {
