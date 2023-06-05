@@ -1,20 +1,39 @@
 .our-product{
-    padding-top: 72px;
+   
     padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
     
         .our-product {
-                padding-top: 100px;
+                
                 padding-bottom: 100px;
     }
 }
  
 @media only screen and (min-width: 1200px) {
 .our-product{
-    padding-top: 128px;
+    
         padding-bottom: 128px;
 }
+}
+
+.pagination-wrapper{
+    margin-top: 32px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+    
+}
+
+.pagination-item{
+        display: inline-block;
+            background-color: rgba(17, 17, 17, 0.1);
+            width: 13px;
+            height: 13px;
+            cursor: pointer;
+            border-radius: 50%;
+        
 }
 
 
