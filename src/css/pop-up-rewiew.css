@@ -133,10 +133,14 @@
   position: absolute;
   top: 0;
   left: 19px;
+  width: 24px;
+  height: 18px;
 }
 @media only screen and (min-width: 768px) {
   .modal-leave-review-icon {
     left: 24px;
+    width: 32px;
+    height: 24px;
   }
 }
 .modal-leave-review-phone-code {
