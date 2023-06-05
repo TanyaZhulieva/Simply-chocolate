@@ -2,7 +2,6 @@
 .buy-backdrop {
     display: none;
 
-
 }
 
 .buy-active {
@@ -34,7 +33,6 @@
 
 }
 
-
 .buy-modal {
     position: absolute;
 
@@ -53,13 +51,11 @@
 
 
 
-
 .buy-modal {
     top: calc(50%);
     left: calc(50%);
     transform: translateX(-50%) translateY(-50%) scale(1);
 }
-
 
 
 @media screen and (min-width: 311px) and (max-width: 767px) {
@@ -74,7 +70,6 @@
         width: 513px;
     }
 }
-
 
 
 .buy-active {
@@ -125,7 +120,6 @@
     font-size: 14px;
     line-height: 17px;
 
-
     color: #FFFFFF;
 
 }
@@ -156,7 +150,6 @@
 .buy-modal-form {}
 
 
-
 .buy-title {
 
     font-weight: 600;
@@ -172,7 +165,6 @@
 .buy-title-color {
     color: #FD9222;
 }
-
 
 .buy-img-wrap {
     display: flex;
@@ -196,7 +188,6 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
 }
-
 
 @media only screen and (min-width: 768px) {
     .buy-item {
@@ -298,7 +289,6 @@
     margin-bottom: 32px;
     flex-direction: column;
 
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -332,12 +322,10 @@
 
 
 
-
 .create-line-left:before {
     content: '';
 
     border: 1.5px solid rgba(17, 17, 17, 0.05);
-
 
 
 
@@ -370,7 +358,6 @@
 
 }
 
-
 @media only screen and (min-width: 768px) {
     .buy-form-label {
         font-weight: 500;
@@ -399,7 +386,6 @@
     }
 }
 
-
 .buy-mob-cod {
     display: block;
     position: absolute;
@@ -418,7 +404,6 @@
         left: 74px;
         font-size: 18px;
         line-height: 22px;
-
 
     }
 }
@@ -518,14 +503,12 @@
     padding: 12px 28px;
     gap: 14px;
 
-
     width: 109px;
     height: 41px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
-
 
     color: #FFFFFF;
 
