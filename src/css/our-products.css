@@ -1,0 +1,153 @@
+.our-product{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+    
+        .our-product {
+                padding-top: 100px;
+                padding-bottom: 100px;
+    }
+}
+ 
+@media only screen and (min-width: 1200px) {
+.our-product{
+    padding-top: 128px;
+        padding-bottom: 128px;
+}
+}
+
+
+.product-title {
+    
+    
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.16;       
+    line-height:1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;   
+    color: var(--txt-color-light-theme);
+
+    text-align: center;
+    margin-bottom: 50px;
+    }
+.product-span {
+    color: var(--accent-color);
+  }
+  .product-list {
+
+      display: flex;
+      justify-content: center;
+      padding-left: 0px;
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+      .product-list {
+          display: flex;
+          gap: 18px;
+          justify-content: center;
+
+      }
+  }
+
+  .product-item {
+      width: 335px;
+      height: 364px;
+      background-color: var(--white-color);
+      border-radius: 15px 15px 15px 15px;
+  }
+
+.product-image {
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #111111;
+
+    margin: 0;
+    text-align: center;
+    margin-bottom: 2px;
+
+}
+
+.product-desc {
+    
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+
+    margin: 0;
+    text-align: center;
+    margin-bottom: 18px;    
+}
+
+.price-holder {
+    width: 94px;
+    height: 33px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+
+    background-color: var(--light-bg-color);
+    background: var(--light-bg-color);
+    ;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .product-item{
+        width: 270px;
+    }
+}
+
+
+
+.hidden-product-one,
+.hidden-product-two,
+.hidden-product-three {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .hidden-product-one {
+        display: block;
+    }
+        .hidden-product-two {
+            display: block;
+        }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .hidden-product-three {
+        display: block;
+    }
+
+
+}
+
