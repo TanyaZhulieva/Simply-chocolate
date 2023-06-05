@@ -166,7 +166,7 @@
   top: 14px;
   left: 50px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.21;
   letter-spacing: -0.02em;
 }
@@ -174,7 +174,7 @@
   .modal-leave-review-phone-code {
     font-size: 18px;
     line-height: 1.22;
-    top: 22px;
+    top: 24px;
     left: 74px;
   }
 }
