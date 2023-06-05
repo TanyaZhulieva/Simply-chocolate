@@ -1,0 +1,64 @@
+/* */
+<!-- Modal window reviews -->
+<div data-modal="2" class="modal reviews-backdrop">
+  <div class="reviws-modal">
+    <button
+      data-modal-close
+      type="button"
+      class="reviews-btn-close js-modal-close"
+    >
+      <svg class="reviews-icon-close">
+        <use href="../img/icons.svg#x-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-leave-review-header">
+      <span class="black-part-reviews">
+        LEAVE A REVIEW <br />
+        ABOUT</span
+      >
+      <span class="part-reviews-header">OUR CHOCOLATE</span>
+    </h2>
+    <form class="modal-leave-review">
+      <label class="modal-leave-review-field">
+        <input
+          type="text"
+          name="user_name"
+          class="modal-leave-review-input"
+          placeholder="Name"
+          pattern="[a-zA-Zа-яА-Я]+"
+          minlength="3"
+        />
+      </label>
+
+      <label class="modal-leave-review-field">
+        <input
+          type="email"
+          name="user_email"
+          class="modal-leave-review-input"
+          placeholder="Enter your email"
+        />
+      </label>
+      <label class="modal-leave-review-field modal-leave-review-field-svg">
+        <input
+          type="tel"
+          name="user_phone"
+          class="modal-leave-review-input modal-leave-review-input-phone"
+          placeholder="Phone number"
+        />
+        <svg class="modal-leave-review-icon">
+          <use class="modal-icon-ua" href="../img/icons.svg#flag-ua"></use>
+        </svg>
+        <span class="modal-leave-review-phone-code">+380</span>
+      </label>
+      <label class="modal-leave-review-field leave-review-comment">
+        <textarea
+          name="user_message"
+          class="modal-leave-review-input modal-leave-review-message"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+
+      <button class="reviews-send" type="submit">Send</button>
+    </form>
+  </div>
+</div>
