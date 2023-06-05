@@ -7,7 +7,6 @@
   background-color: #00000080;
 }
 .reviws-modal {
-  position: absolute;
   height: 471px;
   background-color: #fafafa;
   border-radius: 15px;
@@ -27,10 +26,11 @@
 }
 .reviews-btn-close {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -38,6 +38,11 @@
   right: 14px;
   background-color: transparent;
   background-size: cover;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviews-icon-close {
+  width: 12px;
+  height: 12px;
 }
 @media only screen and (min-width: 768px) {
   .reviews-icon-close {
@@ -45,13 +50,16 @@
     height: 14px;
   }
   .reviews-btn-close {
-    width: 14px;
-    height: 14px;
+    width: 28px;
+    height: 28px;
     top: 24px;
     right: 24px;
   }
 }
-
+.reviews-btn-close:hover,
+.reviews-btn-close:focus {
+  background-color: #fcf1e0;
+}
 .reviews-icon-close {
   fill: var(--txt-color-light-theme);
   stroke: var(--txt-color-light-theme);
