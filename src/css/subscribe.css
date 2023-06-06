@@ -2,11 +2,13 @@
 .subscribe-container {
   min-width: 320px;
   max-width: 375px;
-  padding: 0 24.5px;
   margin: 0 auto;
+}
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+@media only screen and (min-width: 768px) {
+  .subscribe-container {
+    max-width: 467px;
+  }
 }
 
 .subscribe-section {
@@ -21,17 +23,15 @@
   background-position: center;
   background-size: cover;
 
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(../img/subscribe/Subcribe_mob@1x.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .subscribe-section {
     background-image: url(../img/subscribe/Subcribe_mob@2x.jpg);
   }
@@ -43,8 +43,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .subscribe-section {
       background-image: url(../img/subscribe/Subcribe_tab@2x.jpg);
     }
@@ -57,8 +57,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .subscribe-section {
       background-image: url(../img/subscribe/Subcribe_desk@2x.jpg);
     }
@@ -69,15 +69,33 @@
   max-width: 291px;
   margin: 0 auto;
   margin-bottom: 24px;
-
   color: var(--white-color);
 }
 
-.subscribe-text {
-  max-width: 326px;
-  margin-bottom: 24px;
+@media only screen and (min-width: 768px) {
+  .subscribe-title {
+    max-width: 378px;
+  }
+}
 
+.subscribe-text {
+  max-width: 291px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 24px;
   color: var(--white-color);
+}
+
+@media only screen and (min-width: 375px) {
+  .subscribe-text {
+    max-width: 326px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-text {
+    max-width: 467px;
+  }
 }
 
 .subscribe-btn {
@@ -98,6 +116,14 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-btn {
+    width: 172px;
+    height: 50px;
+    padding: 14px 40px;
+  }
 }
 
 .subscribe-btn:hover,
