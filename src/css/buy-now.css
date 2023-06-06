@@ -1,0 +1,496 @@
+ .buy-backdrop {
+     position: fixed;
+
+     align-items: center;
+     justify-content: center;
+
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+
+     background-color: rgba(46, 47, 66, 0.4);
+
+     z-index: 10;
+
+     opacity: 1;
+     visibility: visible;
+     pointer-events: initial;
+
+     transition: opacity var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1), visibility var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
+
+ }
+
+ .buy-modal-form {}
+
+ .buy-modal {
+     position: absolute;
+     width: 311px;
+     box-sizing: content-box;
+
+     padding: 32px 24px;
+     background: #FAFAFA;
+     border-radius: 15px;
+
+
+     height: 75%;
+     max-height: 994px;
+     overflow: scroll;
+ }
+
+
+
+ .buy-modal {
+     top: calc(60%);
+     left: calc(50%);
+     transform: translateX(-50%) translateY(-50%) scale(1);
+ }
+
+
+ @media screen and (min-width: 311px) and (max-width: 767px) {
+     .buy-modal {
+         width: 263px;
+     }
+ }
+
+ @media screen and (min-width: 768px) {
+     .buy-modal {
+
+         padding: 48px;
+         width: 513px;
+     }
+ }
+
+
+ .buy-active {
+     display: block;
+ }
+
+
+ ::placeholder {
+
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.2;
+     align-items: center;
+     letter-spacing: -0.02em;
+
+     color: #4040404d;
+ }
+
+ @media only screen and (min-width: 768px) {
+     ::placeholder {
+
+         font-size: 18px;
+     }
+ }
+
+
+
+ .buy-close-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
+     top: 14px;
+     right: 14px;
+
+
+     background-color: transparent;
+     border-style: none;
+
+     position: absolute;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-close-btn {
+         left: 94%;
+     }
+ }
+
+
+ @media only screen and (min-width: 768px) {
+     .buy-close-icon {
+         width: 24px;
+         height: 24px;
+     }
+ }
+
+
+ .buy-title {
+
+     font-weight: 600;
+     font-size: 20px;
+     line-height: 1.2;
+     text-align: center;
+     letter-spacing: -0.03em;
+     text-transform: uppercase;
+     margin-bottom: 32px;
+     color: #111111;
+ }
+
+ .buy-title-color {
+     color: #FD9222;
+ }
+
+
+
+ .buy-list {
+     padding-inline-start: 0;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-list {
+         display: flex;
+         justify-content: center;
+         flex-direction: row;
+     }
+ }
+
+ .buy-item {
+     display: flex;
+     padding: 8px 16px;
+
+     align-items: center;
+     gap: 73px;
+
+     background: #FFFFFF;
+     border: 1px solid rgba(17, 17, 17, 0.1);
+     border-radius: 15px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-item {
+         flex-direction: column;
+         /* width: 117px;
+         height: 154px; */
+         gap: 14px;
+         padding-top: 24px;
+         padding-left: 20px;
+         padding-right: 20px;
+         padding-bottom: 18px;
+         align-items: center;
+
+     }
+ }
+
+ @media only screen and (min-width: 769px) {
+     .buy-img {
+         margin: 0;
+         width: 120px;
+         height: 107px;
+     }
+ }
+
+ .buy-item-descr {
+     display: block;
+
+     padding: 6px 16px;
+     gap: 14px;
+
+
+
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 1.2;
+     text-align: center;
+
+
+     color: #111111;
+
+     background: #FAFAFA;
+     border: 1px solid rgba(17, 17, 17, 0.1);
+     border-radius: 100px;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-item-descr {
+         width: 94px;
+         height: 31px;
+         margin: 0;
+         padding: 0;
+         margin-top: auto;
+         line-height: 2.3;
+     }
+ }
+
+ .buy-input-wrap {
+     display: flex;
+     position: relative;
+     flex-direction: column;
+     width: 263px;
+     margin-bottom: 18px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-input-wrap {
+         width: 100%;
+     }
+ }
+
+ .buy-inf-wrap {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 18px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-inf-wrap {
+
+         flex-direction: row;
+         gap: 21px;
+     }
+ }
+
+ .buy-list {
+     display: flex;
+     margin-bottom: 40px;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 8px;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-list {
+         flex-direction: row;
+         gap: 16px;
+     }
+ }
+
+
+ .buy-person-inf {
+     margin-bottom: 14px;
+
+
+ }
+
+ @media only screen and (min-width: 768px) {
+
+     .buy-person-inf,
+     .buy-person-surname {
+         margin-bottom: 0;
+         max-width: 246px;
+         width: 100%;
+     }
+ }
+
+ .buy-phone-wrap {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+ }
+
+
+
+ .create-line-left:before {
+     content: '';
+
+     border: 1.5px solid #1111110d;
+
+
+
+     display: inline-block;
+
+     height: 25px;
+
+     position: absolute;
+
+     margin-left: 105px;
+     margin-top: 29px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .create-line-left:before {
+         margin-left: 149px;
+         margin-top: 35px;
+         height: 32px;
+     }
+ }
+
+ .buy-form-label {
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: -0.02em;
+
+     color: #000000;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-form-label {
+         font-size: 14px;
+         line-height: 1.3;
+         letter-spacing: -0.02em;
+
+         color: #000000;
+     }
+ }
+
+ .buy-form-field {
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: -0.02em;
+     padding: 14px 18px;
+     background-color: transparent;
+     border: 1.5px solid #1111110d;
+     filter: drop-shadow(0px 5.44492px 5.44492px #00000008);
+     border-radius: 8px;
+
+     color: #000000;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-form-field {
+
+         padding: 22px 24px;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 1.22;
+
+     }
+ }
+
+ .buy-mob-cod {
+     display: block;
+     position: absolute;
+     top: 39%;
+     left: 50px;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.2;
+     letter-spacing: -0.02em;
+
+     color: #000000;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-mob-cod {
+         left: 74px;
+         font-size: 18px;
+         line-height: 22px;
+
+     }
+ }
+
+ .buy-email {
+     margin-bottom: 18px;
+ }
+
+ .buy-phone-icon {
+     padding-left: 120px;
+     margin-bottom: 18px;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-phone-icon {
+         padding-left: 174px;
+     }
+ }
+
+ .buy-flag-icon {
+     position: absolute;
+     top: 40%;
+     left: 18px;
+     z-index: 1;
+     pointer-events: none;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-flag-icon {
+         height: 32px;
+         width: 32px;
+         top: 35px;
+     }
+ }
+
+ .buy-card-wrap {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     margin-bottom: 18px;
+
+ }
+
+ .buy-card-icon {
+     position: absolute;
+
+     top: 53%;
+     right: 14px;
+     z-index: 1;
+
+     pointer-events: none;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-card-icon {
+         height: 18px;
+         width: 30px;
+     }
+ }
+
+ .buy-form-comment {
+     display: block;
+     height: 60px;
+     background-color: transparent;
+     resize: none;
+     padding: 14px 18px 14px 18px;
+     border: 1.5px solid #1111110d;
+     filter: drop-shadow(0px 5.44492px 5.44492px #00000008);
+     border-radius: 8px;
+
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 1.2;
+
+     letter-spacing: -0.02em;
+
+     color: #000000;
+
+ }
+
+ @media only screen and (min-width: 768px) {
+     .buy-form-comment {
+         padding-top: 22px;
+         padding-right: 24px;
+         padding-left: 24px;
+         padding-bottom: 22px;
+         height: 137px;
+
+     }
+ }
+
+ .buy-submit-btn {
+     display: flex;
+
+     padding: 12px 28px;
+     gap: 14px;
+
+     width: 109px;
+     height: 41px;
+
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 1.2;
+
+     color: #FFFFFF;
+
+     background: #FD9222;
+     border-radius: 100px;
+     border-style: none;
+ }
+
+ .buy-submit-btn:hover,
+ .buy-submit-btn:focus {
+     background: #FCF1E0;
+     color: #FD9222;
+     border-style: none;
+
+ }

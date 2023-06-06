@@ -1,0 +1,212 @@
+<!-- Modal window  -->
+<div class="buy-backdrop">
+  <div class="buy-modal">
+    <button class="buy-close-btn" type="button" data-modal-close>
+      <svg class="buy-close-icon" width="12" height="12">
+        <use
+          href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-close"
+        ></use>
+      </svg>
+    </button>
+    <h2 class="buy-title"><span class="buy-title-color">bUY</span> nOW</h2>
+
+    <ul class="buy-list">
+      <li class="buy-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./img/buy-modal-img/buy-img1-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img1-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/buy-modal-img/buy-img1-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img1-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./img/buy-modal-img/buy-img1-mob_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img1-mob_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <img
+            class="buy-img"
+            src="./img/buy-modal-img/buy-img1-tab-desk_@1x.jpg"
+            alt="chocolate"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <p class="buy-item-descr">100 g</p>
+      </li>
+      <li class="buy-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./img/buy-modal-img/buy-img2-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img2-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/buy-modal-img/buy-img2-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img2-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./img/buy-modal-img/buy-img2-mob_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img2-mob_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <img
+            class="buy-img"
+            src="./img/buy-modal-img/buy-img2-tab-desk_@1x.jpg"
+            alt="chocolate"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <p class="buy-item-descr">200 g</p>
+      </li>
+      <li class="buy-item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./img/buy-modal-img/buy-img3-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img3-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/buy-modal-img/buy-img3-tab-desk_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img3-tab-desk_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              ./img/buy-modal-img/buy-img3-mob_@1x.jpg 1x,
+              ./img/buy-modal-img/buy-img3-mob_@2x.jpg 2x
+            "
+            type="image/"
+          />
+          <img
+            class="buy-img"
+            src="./img/buy-modal-img/buy-img3-tab-desk_@1x.jpg"
+            alt="chocolate"
+            width="84"
+            height="69"
+            loading="lazy"
+          />
+        </picture>
+        <p class="buy-item-descr">300 g</p>
+      </li>
+    </ul>
+    <form class="buy-modal-form">
+      <!-- Personal information -->
+      <div class="buy-input-wrap">
+        <label class="buy-form-label" for="modal_name"
+          >Personal information</label
+        >
+        <div class="buy-inf-wrap">
+          <input
+            class="buy-form-field buy-person-inf"
+            type="text"
+            pattern="[A-Za-z]"
+            name="modal_name"
+            id="modal_name"
+            placeholder="Name"
+          />
+          <input
+            class="buy-form-field buy-person-surname"
+            type="text"
+            pattern="[A-Za-z]"
+            name="modal_surname"
+            id="modal_surname"
+            placeholder="Surname"
+          />
+        </div>
+        <!-- Email -->
+        <label class="buy-form-label" for="modal_email">Email</label>
+        <input
+          class="buy-form-field buy-email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          name="modal_email"
+          id="modal_email"
+          placeholder="Enter your email"
+        />
+        <!-- Phone number -->
+        <div class="buy-phone-wrap create-line-left">
+          <label class="buy-form-label" for="modal_phone">Phone</label>
+          <input
+            class="buy-form-field buy-phone-icon"
+            type="tel"
+            pattern="2-[0-9]{3}-[0-9]{3}"
+            data-tel-input
+            name="modal_phone"
+            id="modal_phone"
+            placeholder="Phone number"
+          />
+          <p class="buy-mob-cod">+380</p>
+          <svg class="buy-flag-icon" width="24" height="18">
+            <use
+              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
+            ></use>
+          </svg>
+        </div>
+        <!-- Card number -->
+        <div class="buy-card-wrap">
+          <label class="buy-form-label" for="modal_card">Card number</label>
+          <input
+            class="buy-form-field"
+            type="text"
+            pattern="[/^(\d){1,16}$/g"
+            name="modal_card"
+            id="modal_card"
+            placeholder="Enter card"
+          />
+          <svg class="buy-card-icon" width="22" height="13">
+            <use
+              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
+            ></use>
+          </svg>
+        </div>
+        <!-- Comment -->
+        <label class="buy-form-label" for="modal_comment">Comment</label>
+        <textarea
+          class="buy-form-comment"
+          name="modal_comment"
+          id="modal_comment"
+          rows="6"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+      <button class="buy-submit-btn" type="submit" data-modal-open="">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+=== >>>>>>> Stashed changes
