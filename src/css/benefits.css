@@ -1,0 +1,132 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.advantages-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .advantages-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-container {
+    max-width: 1174px;
+  }
+}
+
+.advantages-section {
+  background-color: var(--dark-bg-color);
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-list {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-list {
+    gap: 70px;
+  }
+  
+}
+
+
+.advantages-item {
+   --item: 1;
+  flex-basis: calc((100% - 20px * (var(--item) - 1)) / var(--item));
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-item {
+    --item: 2;
+    flex-basis: calc((100% - 32px * (var(--item) - 1)) / var(--item));
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-item {
+
+    position: relative;
+    --item: 3;
+    flex-basis: calc((100% - 70px * (var(--item) - 1)) / var(--item));
+    }
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.advantages-icon {
+  fill: var(--accent-color);
+}
+
+
+.advantages-title {
+  
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.21;
+  text-align: start;
+  
+  color: var(--txt-color-dark-theme);
+  margin-bottom: 18px;
+}
+
+.advantages-descr {
+  
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .advantages-item:not(:last-child)::before{
+    content:'';
+    display: block;
+    position: absolute;
+    height: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    left: 100%;
+    bottom: 15%;
+    margin-left: 18px;
+    
+     }
+    
+    }
+
+
