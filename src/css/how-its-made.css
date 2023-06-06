@@ -126,10 +126,6 @@
   }
 }
 
-.recipe-list {
-  padding-left: 14px;
-  list-style-type: disc;
-}
 
 @media only screen and (min-width: 768px) {
   .recipe-list {
@@ -144,6 +140,8 @@
 }
 
 .recipe-item {
+  position: relative;
+  padding-left: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -158,4 +156,18 @@
   .recipe-item:not(:last-child) {
     margin-bottom: 24px;
   }
+}
+
+.recipe-item::before {
+  position: absolute;
+  display: block;
+  top: 9px;
+  left: 3px;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #4C4C4C;
+  border: 1px solid #ECEDED;
+  border-radius: 50%;
 }
