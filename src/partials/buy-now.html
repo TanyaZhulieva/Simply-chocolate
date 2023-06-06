@@ -1,7 +1,7 @@
 <!-- Modal window  -->
-<div class="buy-backdrop">
+<div data-modal="3" class="modal buy-backdrop">
   <div class="buy-modal">
-    <button class="buy-close-btn" type="button" data-modal-close>
+    <button data-modal-close class="js-modal-close buy-close-btn" type="button">
       <svg class="buy-close-icon" width="12" height="12">
         <use
           href="./img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-close"
@@ -172,7 +172,7 @@
           <p class="buy-mob-cod">+380</p>
           <svg class="buy-flag-icon" width="24" height="18">
             <use
-              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
+              href="./img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
             ></use>
           </svg>
         </div>
@@ -189,7 +189,7 @@
           />
           <svg class="buy-card-icon" width="22" height="13">
             <use
-              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
+              href="./img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
             ></use>
           </svg>
         </div>
@@ -203,10 +203,7 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button class="buy-submit-btn" type="submit" data-modal-open="">
-        Submit
-      </button>
+      <button class="buy-submit-btn" type="submit">Submit</button>
     </form>
   </div>
 </div>
-
