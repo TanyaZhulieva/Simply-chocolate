@@ -110,10 +110,6 @@
     
 }
 
-/* .text-wrapper{
-  position: relative;
-  max-width: 308px;
-} */
 
 @media only screen and (min-width: 1200px) {
   .advantages-item:not(:last-child)::before{
