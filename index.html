@@ -12,7 +12,7 @@
     />
     
     <script type="module" crossorigin src="/project-CodeLovers23/assets/index-f0431b59.js"></script>
-    <link rel="stylesheet" href="/project-CodeLovers23/assets/index-88929246.css">
+    <link rel="stylesheet" href="/project-CodeLovers23/assets/index-95574377.css">
   </head>
   <body>
     <!-- header -->
@@ -656,7 +656,7 @@
 </section>
 
       <!-- Subscribe -->
-<section class="subscribe-section " id="subscribe">
+<section class="subscribe-section" id="subscribe">
   <div class="subscribe-container">
     <h2 class="subscribe-title title">explore our new chocolate first</h2>
     <p class="subscribe-text text">
@@ -665,7 +665,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="subscribe-btn" type="button" data-modal-open="">
+    <button class="js-open-modal subscribe-btn" type="button" data-modal="1">
       Subscribe
     </button>
   </div>
@@ -817,7 +817,7 @@
       class="reviews-btn-close js-modal-close"
     >
       <svg class="reviews-icon-close">
-        <use href="../img/icons.svg#x-close"></use>
+        <use href="/project-CodeLovers23/assets/icons-7fd55752.svg#x-close"></use>
       </svg>
     </button>
     <h2 class="modal-leave-review-header">
@@ -855,7 +855,7 @@
           placeholder="Phone number"
         />
         <svg class="modal-leave-review-icon">
-          <use class="modal-icon-ua" href="../img/icons.svg#flag-ua"></use>
+          <use class="modal-icon-ua" href="/project-CodeLovers23/assets/icons-7fd55752.svg#flag-ua"></use>
         </svg>
         <span class="modal-leave-review-phone-code">+380</span>
       </label>
@@ -872,9 +872,14 @@
   </div>
 </div>
 
-    <div class="backdrope-explore" data-modal>
+    <div data-modal="1" class="modal reviews-backdrop">
+  <!-- backdrope-explore -->
   <div class="modal-explore">
-    <button class="modal-explore-close-btn" type="button" data-modal-close>
+    <button
+      data-modal-close
+      type="button"
+      class="modal-explore-close-btn js-modal-close"
+    >
       <svg class="modal-explore-close-icon" width="24" height="24">
         <use href="../img/icons.svg#x-close"></use>
       </svg>
