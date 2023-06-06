@@ -149,7 +149,7 @@
 .componets-list-item-desc-dark {
   color: var(--txt-color-light-theme);
 }
-.overlay {
+.components-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -167,13 +167,13 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.componets-list-item:hover .overlay,
-.componets-list-item:focus .overlay {
+.componets-list-item:hover .components-overlay,
+.componets-list-item:focus .components-overlay {
   transform: translate(0, 0);
 }
 
 @media only screen and (min-width: 1200px) {
-  .overlay {
+  .components-overlay {
     padding: 20px;
   }
 }

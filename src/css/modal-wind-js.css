@@ -69,7 +69,7 @@
  
  /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
  
- a {
+ /* a {
     padding: 20px;
     display: inline-block;
     text-decoration: none;
@@ -77,4 +77,4 @@
     margin: 10px;
     color: #fff;
     border-radius: 3px;
- }
+ } */
