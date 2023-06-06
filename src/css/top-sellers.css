@@ -96,6 +96,13 @@
     margin: 0;
     margin-left: auto;
 }
+
+.sellers-btn:hover,
+.sellers-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
+}
+
 @media only screen and (min-width: 768px) {
   .sellers-btn {
     min-width: 162px;
