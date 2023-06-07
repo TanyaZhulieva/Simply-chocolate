@@ -1,8 +1,7 @@
 .buy-backdrop {
   position: fixed;
 
-  align-items: center;
-  justify-content: center;
+  
 
   width: 100%;
   height: 100%;
@@ -26,6 +25,9 @@
 
 .buy-modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 311px;
 
   padding: 32px 24px;
@@ -39,11 +41,11 @@
   text-align: left;
 }
 
-.buy-modal {
-  top: calc(60%);
+/* .buy-modal {
+  top: calc(20%);
   left: calc(50%);
   transform: translateX(-50%) translateY(-50%) scale(1);
-}
+} */
 
 @media screen and (min-width: 768px) {
   .buy-modal {
@@ -155,13 +157,13 @@
   }
 }
 
-@media only screen and (min-width: 769px) {
+/* @media only screen and (min-width: 769px) {
   .buy-img {
     margin: 0;
     width: 120px;
     height: 107px;
   }
-}
+} */
 
 .buy-item-descr {
   display: flex;
@@ -184,12 +186,12 @@
 
 @media only screen and (min-width: 768px) {
   .buy-item-descr {
-    width: 94px;
-    height: 31px;
+    width: 96px;
+    height: 33px;
     margin: 0;
     padding: 0;
     margin-top: auto;
-    line-height: 1.3;
+    line-height: 1.21;
   }
 }
 
