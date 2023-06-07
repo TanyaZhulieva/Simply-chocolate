@@ -21,7 +21,8 @@
     visibility var(--animation-speed) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.buy-modal-form {}
+/* .buy-modal-form {
+} */
 
 .buy-modal {
   position: absolute;
@@ -34,6 +35,8 @@
   height: 75%;
   max-height: 994px;
   overflow: scroll;
+
+  text-align: left;
 }
 
 .buy-modal {
@@ -73,7 +76,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 24px;
+  height: 24px;
   padding: 0;
+  border: none;
+  border-radius: 50%;
   top: 14px;
   right: 14px;
 
@@ -87,7 +94,14 @@
   .buy-close-btn {
     top: 24px;
     right: 24px;
+    width: 28px;
+    height: 28px;
   }
+}
+
+.buy-close-btn:hover,
+.buy-close-btn:focus {
+  background-color: #fcf1e0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -96,6 +110,7 @@
     height: 14px;
   }
 }
+
 
 .buy-title {
   font-weight: 600;
@@ -115,7 +130,6 @@
 /* .buy-list {
   padding-inline-start: 0;
 } */
-
 
 .buy-item {
   display: flex;
@@ -229,7 +243,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   .buy-person-inf,
   .buy-person-surname {
     margin-bottom: 0;
