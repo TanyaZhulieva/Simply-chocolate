@@ -12,7 +12,7 @@
     />
     
     <script type="module" crossorigin src="/project-CodeLovers23/assets/index-f0431b59.js"></script>
-    <link rel="stylesheet" href="/project-CodeLovers23/assets/index-120dbde0.css">
+    <link rel="stylesheet" href="/project-CodeLovers23/assets/index-a577d4c3.css">
   </head>
   <body>
     <!-- header -->
@@ -99,7 +99,13 @@
     <div class="hero-btn-wrapper">
       <ul class="hero-btn-list list">
         <li class="hero-btn-list-item">
-          <button type="button" class="hero-modal-btn buy-btn">Buy now</button>
+          <button
+            data-modal="3"
+            type="button"
+            class="js-open-modal hero-modal-btn buy-btn"
+          >
+            Buy now
+          </button>
         </li>
         <li class="hero-btn-list-item">
           <a href="#how-made" class="hero-scroll-btn-link link"
@@ -565,9 +571,9 @@
           width="335"
         />
         <button
-          class="sellers-btn sellers-btn-mob mobile"
+          class="js-open-modal sellers-btn sellers-btn-mob mobile"
           type="button"
-          data-modal="1"
+          data-modal="3"
         >
           Buy now
         </button>
@@ -588,7 +594,9 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="sellers-btn" type="button" data-modal="1">Buy now</button>
+      <button class="js-open-modal sellers-btn" type="button" data-modal="3">
+        Buy now
+      </button>
     </div>
   </div>
 </section>
@@ -808,9 +816,9 @@
 </div>
 
     <!-- Modal window  -->
-<div class="buy-backdrop">
+<div data-modal="3" class="modal buy-backdrop">
   <div class="buy-modal">
-    <button class="buy-close-btn" type="button" data-modal-close>
+    <button data-modal-close class="js-modal-close buy-close-btn" type="button">
       <svg class="buy-close-icon" width="12" height="12">
         <use
           href="/project-CodeLovers23/assets/buy-window-icons-b7f03752.svg#buy-icon-close"
@@ -957,7 +965,7 @@
           <p class="buy-mob-cod">+380</p>
           <svg class="buy-flag-icon" width="24" height="18">
             <use
-              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-flag"
+              href="/project-CodeLovers23/assets/buy-window-icons-b7f03752.svg#buy-icon-flag"
             ></use>
           </svg>
         </div>
@@ -974,7 +982,7 @@
           />
           <svg class="buy-card-icon" width="22" height="13">
             <use
-              href="../img/buy-modal-img/buy-window-icons/buy-window-icons.svg#buy-icon-card"
+              href="/project-CodeLovers23/assets/buy-window-icons-b7f03752.svg#buy-icon-card"
             ></use>
           </svg>
         </div>
@@ -988,13 +996,10 @@
           placeholder="Enter text"
         ></textarea>
       </div>
-      <button class="buy-submit-btn" type="submit" data-modal-open="">
-        Submit
-      </button>
+      <button class="buy-submit-btn" type="submit">Submit</button>
     </form>
   </div>
 </div>
-
 
     <!-- Modal window reviews -->
 <div data-modal="2" class="modal reviews-backdrop">
