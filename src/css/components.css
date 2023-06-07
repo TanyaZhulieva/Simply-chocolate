@@ -157,7 +157,7 @@
   height: 100%;
   transform: translate(0, 100%);
   overflow: hidden;
-  /* overflow: auto; */
+
   background-color: var(--white-color);
 
   padding: 28px;
@@ -175,6 +175,7 @@
 @media only screen and (min-width: 1200px) {
   .components-overlay {
     padding: 20px;
+    overflow-y: auto;
   }
 }
 .overlay-title {
@@ -243,5 +244,21 @@
     min-width: 230px;
     height: 162px;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(94, 94, 94, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9524c3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fd9222;
 }
 /* =========== /Components section ========== */
