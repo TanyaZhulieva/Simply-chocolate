@@ -91,8 +91,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .modal-explore-wrapper {
     background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars_mob@2x.jpg);
   }
@@ -106,8 +106,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-explore-wrapper {
       background-image: url(../img/pop-up-explore/pieces_of_chocolate_bars_tab@2x.jpg);
     }
@@ -132,6 +132,7 @@
 
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  text-align: left;
 
   color: var(--txt-color-light-theme);
 }
@@ -141,6 +142,12 @@
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .br-explore {
+    display: block;
   }
 }
 
